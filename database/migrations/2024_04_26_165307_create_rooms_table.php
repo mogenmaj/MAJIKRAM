@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->integer('room_number');
             $table->integer('floor_number');
+            $table->foreignId('category_id')->constrained('room_categories')->cascadeOnDelete();
             $table->float('price');
             $table->timestamps();
         });

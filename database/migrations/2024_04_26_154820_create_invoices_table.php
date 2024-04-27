@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
-            $table->date('invoice_created');
             $table->float('amount');
             $table->string('payment_type');
             $table->timestamps();
