@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Invoice extends Model
 {
     use HasFactory;
+    public function client(): BelongsTo
+    {
+        return $this->belongsTo(Client::class);
+    }
+     public function reservation(): HasOne
+    {
+        return $this->hasOne(reservation::class);
+    }
 }
