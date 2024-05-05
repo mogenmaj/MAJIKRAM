@@ -36,10 +36,10 @@ class ReservationResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id'), 
-                TextColumn::make('start_date')->date(),
-                TextColumn::make('end_date')->date(),
-                TextColumn::make('created_at')->date(),
-                TextColumn::make('updated_at')->date(),
+                TextColumn::make('start_date')->date()->searchable()->toggleable()->sortable(),
+                TextColumn::make('end_date')->date()->searchable()->toggleable()->sortable(),
+                TextColumn::make('created_at')->date()->searchable()->toggleable()->sortable(),
+                TextColumn::make('updated_at')->date()->searchable()->toggleable()->sortable(),
                                ])
             ->filters([
                 //

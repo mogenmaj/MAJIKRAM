@@ -24,10 +24,7 @@ class RoomcategoryResource extends Resource
     {
         return $form
             ->schema([
-                DatePicker::make('created_at')->native(false),
-                DatePicker::make('updated_at')->native(false),
-                //
-                            ]);
+            ]);
     }
     public static function table(Table $table): Table
     {

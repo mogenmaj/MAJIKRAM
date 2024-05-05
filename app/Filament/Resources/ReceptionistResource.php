@@ -24,8 +24,6 @@ class ReceptionistResource extends Resource
     {
         return $form
             ->schema([
-                DatePicker::make('created_at')->native(false),
-                DatePicker::make('updated_at')->native(false),
             ]);
     }
 
@@ -35,8 +33,8 @@ class ReceptionistResource extends Resource
             ->columns([
                 TextColumn::make('id'), 
                 TextColumn::make('user_id'),
-                TextColumn::make('created_at')->date(),
-                TextColumn::make('updated_at')->date(),
+                TextColumn::make('created_at')->date()->searchable()->toggleable()->sortable(),
+                TextColumn::make('updated_at')->date()->searchable()->toggleable()->sortable(),
             ])
             ->filters([
                 //

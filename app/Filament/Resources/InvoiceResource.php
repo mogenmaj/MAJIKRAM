@@ -39,9 +39,9 @@ class InvoiceResource extends Resource
             ->columns([
                 TextColumn::make('id'), 
                 TextColumn::make('amount')->searchable()->toggleable()->sortable(),
-                TextColumn::make('payment_type')->badge(),
-                TextColumn::make('created_at')->date(),
-                TextColumn::make('updated_at')->date(),
+                TextColumn::make('payment_type')->badge()->searchable()->toggleable()->sortable(),
+                TextColumn::make('created_at')->date()->searchable()->toggleable()->sortable(),
+                TextColumn::make('updated_at')->date()->searchable()->toggleable()->sortable(),
             ])
             ->filters([
                 //

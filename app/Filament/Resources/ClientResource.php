@@ -35,18 +35,18 @@ class ClientResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id'), 
-                TextColumn::make('first_name'),
-                TextColumn::make('last_name'),
-                TextColumn::make('birth_date')->date(),
-                TextColumn::make('address'),
-                TextColumn::make('country'),
-                TextColumn::make('city'),
-                TextColumn::make('status'),
-                TextColumn::make('phone'),
-                TextColumn::make('nationality'),
-                TextColumn::make('carte_number'),
-                TextColumn::make('created_at')->date(),
-                TextColumn::make('updated_at')->date(),
+                TextColumn::make('first_name')->searchable()->toggleable()->sortable(),
+                TextColumn::make('last_name')->searchable()->toggleable()->sortable(),
+                TextColumn::make('birth_date')->date()->searchable()->toggleable()->sortable(),
+                TextColumn::make('address')->searchable()->toggleable()->sortable(),
+                TextColumn::make('country')->searchable()->toggleable()->sortable(),
+                TextColumn::make('city')->searchable()->toggleable()->sortable(),
+                TextColumn::make('status')->searchable()->toggleable()->sortable(),
+                TextColumn::make('phone')->searchable()->toggleable()->sortable(),
+                TextColumn::make('nationality')->searchable()->toggleable()->sortable(),
+                TextColumn::make('carte_number')->searchable()->toggleable()->sortable(),
+                TextColumn::make('created_at')->date()->searchable()->toggleable()->sortable(),
+                TextColumn::make('updated_at')->date()->searchable()->toggleable()->sortable(),
             ])
             ->filters([
                 //

@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 class Invoice extends Model
 {
     use HasFactory;
-    protected $fillable = ['amount', 'payment_type'] ;
+    protected $fillable = ["amount", "payment_type"] ;
     public function client(): BelongsTo
     {
         return $this->belongsTo(Client::class);
