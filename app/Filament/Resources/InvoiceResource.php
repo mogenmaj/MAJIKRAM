@@ -1,12 +1,15 @@
 <?php
 
 namespace App\Filament\Resources;
+
+use App\Enums\PaymentType;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
 use App\Filament\Resources\InvoiceResource\Pages;
 use App\Filament\Resources\InvoiceResource\RelationManagers;
 use App\Models\Invoice;
 use Filament\Forms;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -24,18 +27,19 @@ class InvoiceResource extends Resource
     {
         return $form
             ->schema([
-                DatePicker::make('created_at')->native(false),
-                DatePicker::make('updated_at')->native(false),
+                TextInput::make('amount')->required()->numeric()->suffix('MAD'),
+                                Forms\Components\ToggleButtons::make('payment_type')->inline()->options(PaymentType::class),
                             ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
+        ->groups(['payment_type'])
             ->columns([
                 TextColumn::make('id'), 
-                TextColumn::make('amount'),
-                TextColumn::make('payment_type'),
+                TextColumn::make('amount')->searchable()->toggleable()->sortable(),
+                TextColumn::make('payment_type')->badge(),
                 TextColumn::make('created_at')->date(),
                 TextColumn::make('updated_at')->date(),
             ])

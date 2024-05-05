@@ -38,7 +38,7 @@ class ClientResource extends Resource
                 TextColumn::make('first_name'),
                 TextColumn::make('last_name'),
                 TextColumn::make('birth_date')->date(),
-                TextColumn::make('adress'),
+                TextColumn::make('address'),
                 TextColumn::make('country'),
                 TextColumn::make('city'),
                 TextColumn::make('status'),
