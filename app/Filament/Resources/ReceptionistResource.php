@@ -19,7 +19,6 @@ class ReceptionistResource extends Resource
     protected static ?string $model = Receptionist::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-users';
-
     public static function form(Form $form): Form
     {
         return $form
@@ -32,7 +31,7 @@ class ReceptionistResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('id'), 
-                TextColumn::make('user_id'),
+                TextColumn::make('user_id')->searchable()->toggleable()->sortable(),
                 TextColumn::make('created_at')->date()->searchable()->toggleable()->sortable(),
                 TextColumn::make('updated_at')->date()->searchable()->toggleable()->sortable(),
             ])
