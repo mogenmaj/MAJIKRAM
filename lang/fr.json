@@ -1,3 +1,5 @@
 {
-    "Invoice":"Factures"
-    }
+    "invoice":"facture",
+    "room":"chambre"
+
+      }
