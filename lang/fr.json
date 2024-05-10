@@ -1,5 +1,9 @@
 {
-    "invoice":"facture",
-    "room":"chambre"
+    "invoice":"Factures",
+    "room":"Chambres",
+    "client":"Clients",
+    "reservation":"Réservations",
+    "roomcategory":"CatégoriesChambres",
+    "receptionist":"Réceptionnistes"
 
       }

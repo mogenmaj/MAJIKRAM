@@ -18,6 +18,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class InvoiceResource extends Resource
 {
     protected static ?string $model = Invoice::class;
+    public static function getNavigationLabel(): string
+    {
+        return __('invoice');
+    }
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
