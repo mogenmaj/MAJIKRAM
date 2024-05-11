@@ -17,7 +17,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ReceptionistResource extends Resource
 {
     protected static ?string $model = Receptionist::class;
-
+    public static function getNavigationLabel(): string
+    {
+        return __('Receptionists');
+    }
     protected static ?string $navigationIcon = 'heroicon-o-users';
     public static function form(Form $form): Form
     {

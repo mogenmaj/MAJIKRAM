@@ -17,7 +17,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class RoomcategoryResource extends Resource
 {
     protected static ?string $model = Roomcategory::class;
-
+    public static function getNavigationLabel(): string
+    {
+        return __('Room categories');
+    }
     protected static ?string $navigationIcon = 'heroicon-o-building-office-2';
 
     public static function form(Form $form): Form
