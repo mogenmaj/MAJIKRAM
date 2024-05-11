@@ -19,8 +19,14 @@ class RoomcategoryResource extends Resource
     protected static ?string $model = Roomcategory::class;
     public static function getNavigationLabel(): string
     {
+<<<<<<< HEAD
         return __('Room categories');
     }
+=======
+        return __('roomcategory');
+    }
+
+>>>>>>> 89dacff1750e7217688b451bf729ec68ec0a0f05
     protected static ?string $navigationIcon = 'heroicon-o-building-office-2';
     public static function form(Form $form): Form
     {

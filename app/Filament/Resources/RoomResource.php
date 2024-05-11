@@ -19,8 +19,13 @@ class RoomResource extends Resource
     protected static ?string $model = Room::class;
     public static function getNavigationLabel(): string
     {
+<<<<<<< HEAD
         return __('Room');
     }
+=======
+        return __('room');
+}
+>>>>>>> 89dacff1750e7217688b451bf729ec68ec0a0f05
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function form(Form $form): Form

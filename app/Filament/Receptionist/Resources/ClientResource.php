@@ -19,8 +19,14 @@ class ClientResource extends Resource
     protected static ?string $model = Client::class;
     public static function getNavigationLabel(): string
     {
+<<<<<<< HEAD
         return __('Customers');
     }
+=======
+        return __('client');
+    }
+
+>>>>>>> 89dacff1750e7217688b451bf729ec68ec0a0f05
     protected static ?string $navigationIcon = 'heroicon-o-user-group';
 
     public static function form(Form $form): Form

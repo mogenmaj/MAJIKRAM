@@ -19,8 +19,14 @@ class ReceptionistResource extends Resource
     protected static ?string $model = Receptionist::class;
     public static function getNavigationLabel(): string
     {
+<<<<<<< HEAD
         return __('Receptionists');
     }
+=======
+        return __('receptionist');
+    }
+
+>>>>>>> 89dacff1750e7217688b451bf729ec68ec0a0f05
     protected static ?string $navigationIcon = 'heroicon-o-users';
     public static function form(Form $form): Form
     {
