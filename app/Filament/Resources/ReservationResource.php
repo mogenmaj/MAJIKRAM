@@ -19,14 +19,9 @@ class ReservationResource extends Resource
     protected static ?string $model = Reservation::class;
     public static function getNavigationLabel(): string
     {
-<<<<<<< HEAD
-        return __('Reservations');
-    }
-=======
         return __('reservation');
     }
 
->>>>>>> 89dacff1750e7217688b451bf729ec68ec0a0f05
     protected static ?string $navigationIcon = 'heroicon-o-pencil-square';
     public static function form(Form $form): Form
     {
