@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RoomRover - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Roxandrea - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -41,7 +41,7 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="{{route('index')}}">RoomRover</a>
+        <a class="navbar-brand" href="index.html">Roxandrea</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,22 +57,22 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="{{route('index')}}" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="{{route('rooms')}}" class="nav-link">Rooms</a>
+              <a href="rooms.html" class="nav-link">Rooms</a>
             </li>
             <li class="nav-item">
-              <a href="{{route('restaurant')}}" class="nav-link">Restaurant</a>
+              <a href="restaurant.html" class="nav-link">Restaurant</a>
             </li>
             <li class="nav-item">
-              <a href="{{route('about')}}" class="nav-link">About</a>
+              <a href="about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="{{route('blog')}}" class="nav-link">Blog</a>
+              <a href="blog.html" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="{{route('contact')}}" class="nav-link">Contact</a>
+              <a href="contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -89,13 +89,13 @@
         </a>
       </div>
       <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url(assets/images/bg_1.jpg)">
+        <div class="slider-item" style="background-image: url(images/bg_1.jpg)">
           <div class="overlay"></div>
           <div class="container">
             <div class="row no-gutters slider-text align-items-center">
               <div class="col-md-8 ftco-animate">
                 <div class="text mb-5 pb-5">
-                  <h1 class="mb-3">RoomRover</h1>
+                  <h1 class="mb-3">Roxandrea</h1>
                   <h2>More than a hotel... an experience</h2>
                 </div>
               </div>
@@ -103,14 +103,14 @@
           </div>
         </div>
 
-        <div class="slider-item" style="background-image: url(assets/images/bg_2.jpg)">
+        <div class="slider-item" style="background-image: url(images/bg_2.jpg)">
           <div class="overlay"></div>
           <div class="container">
             <div class="row no-gutters slider-text align-items-center">
               <div class="col-md-8 ftco-animate">
                 <div class="text mb-5 pb-5">
                   <h1 class="mb-3">Experience Epic Beauty</h1>
-                  <h2>RoomRover Hotel &amp; Resort</h2>
+                  <h2>Roxandrea Hotel &amp; Resort</h2>
                 </div>
               </div>
             </div>
@@ -227,7 +227,7 @@
             <a
               href="#"
               class="services-wrap img align-items-end d-flex"
-              style="background-image: url(assets/images/room-3.jpg)"
+              style="background-image: url(images/room-3.jpg)"
             >
               <div class="text text-center pb-2">
                 <h3>Special Rooms</h3>
@@ -238,7 +238,7 @@
             <a
               href="#"
               class="services-wrap img align-items-end d-flex"
-              style="background-image: url(assets/images/swimming-pool.jpg)"
+              style="background-image: url(images/swimming-pool.jpg)"
             >
               <div class="text text-center pb-2">
                 <h3>Swimming Pool</h3>
@@ -249,7 +249,7 @@
             <a
               href="#"
               class="services-wrap img align-items-end d-flex"
-              style="background-image: url(assets/images/resto.jpg)"
+              style="background-image: url(images/resto.jpg)"
             >
               <div class="text text-center pb-2">
                 <h3>Restaurant</h3>
@@ -259,7 +259,7 @@
           <div class="col-md-3">
             <div
               class="services-wrap services-overlay img align-items-center d-flex"
-              style="background-image: url(assets/images/sleep.jpg)"
+              style="background-image: url(images/sleep.jpg)"
             >
               <div class="text text-center pb-2">
                 <h3 class="mb-0">Suites &amp; Rooms</h3>
@@ -280,7 +280,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Welcome to RoomRover Hotel</span>
+            <span class="subheading">Welcome to Roxandrea Hotel</span>
             <h2 class="mb-4">A New Vision of Luxury Hotel</h2>
           </div>
         </div>
@@ -365,7 +365,7 @@
       <div class="container-fluid px-0">
         <div class="row no-gutters justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">RoomRover Rooms</span>
+            <span class="subheading">Roxandrea Rooms</span>
             <h2 class="mb-4">Hotel Master's Rooms</h2>
           </div>
         </div>
@@ -374,10 +374,10 @@
             <div class="room-wrap">
               <div
                 class="img d-flex align-items-center"
-                style="background-image: url(assets/images/bg_3.jpg)"
+                style="background-image: url(images/bg_3.jpg)"
               >
                 <div class="text text-center px-4 py-4">
-                  <h2>Welcome to <a href="{{route('index')}}">RoomRover</a> Hotel</h2>
+                  <h2>Welcome to <a href="index.html">Roxandrea</a> Hotel</h2>
                   <p>
                     A small river named Duden flows by their place and supplies
                     it with the necessary regelialia.
@@ -391,7 +391,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(assets/images/room-1.jpg)"
+                style="background-image: url(images/room-1.jpg)"
               ></a>
               <div class="half left-arrow d-flex align-items-center">
                 <div class="text p-4 p-xl-5 text-center">
@@ -406,9 +406,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="{{route('rooms')}}">Suite Room</a></h3>
+                  <h3 class="mb-3"><a href="rooms.html">Suite Room</a></h3>
                   <p class="pt-1">
-                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
+                    <a href="room-single.html" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -423,7 +423,7 @@
               <a
                 href="#"
                 class="img order-md-last"
-                style="background-image: url(assets/images/room-2.jpg)"
+                style="background-image: url(images/room-2.jpg)"
               ></a>
               <div class="half right-arrow d-flex align-items-center">
                 <div class="text p-4 p-xl-5 text-center">
@@ -438,9 +438,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="{{route('rooms')}}">Family Room</a></h3>
+                  <h3 class="mb-3"><a href="rooms.html">Family Room</a></h3>
                   <p class="pt-1">
-                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
+                    <a href="room-single.html" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -454,7 +454,7 @@
               <a
                 href="#"
                 class="img order-md-last"
-                style="background-image: url(assets/images/room-3.jpg)"
+                style="background-image: url(images/room-3.jpg)"
               ></a>
               <div class="half right-arrow d-flex align-items-center">
                 <div class="text p-4 p-xl-5 text-center">
@@ -469,9 +469,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="{{route('rooms')}}">Deluxe Room</a></h3>
+                  <h3 class="mb-3"><a href="rooms.html">Deluxe Room</a></h3>
                   <p class="pt-1">
-                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
+                    <a href="room-single.html" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -486,7 +486,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(assets/images/room-4.jpg)"
+                style="background-image: url(images/room-4.jpg)"
               ></a>
               <div class="half left-arrow d-flex align-items-center">
                 <div class="text p-4 p-xl-5 text-center">
@@ -501,9 +501,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="{{route('rooms')}}">Luxury Room</a></h3>
+                  <h3 class="mb-3"><a href="rooms.html">Luxury Room</a></h3>
                   <p class="pt-1">
-                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
+                    <a href="room-single.html" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -517,7 +517,7 @@
               <a
                 href="#"
                 class="img"
-                style="background-image: url(assets/images/room-6.jpg)"
+                style="background-image: url(images/room-6.jpg)"
               ></a>
               <div class="half left-arrow d-flex align-items-center">
                 <div class="text p-4 p-xl-5 text-center">
@@ -532,9 +532,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="{{route('rooms')}}">Superior Room</a></h3>
+                  <h3 class="mb-3"><a href="rooms.html">Superior Room</a></h3>
                   <p class="pt-1">
-                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
+                    <a href="room-single.html" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -564,7 +564,7 @@
                     <div class="testimony-wrap py-4 pb-5">
                       <div
                         class="user-img mb-4"
-                        style="background-image: url(assets/images/person_1.jpg)"
+                        style="background-image: url(images/person_1.jpg)"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -595,7 +595,7 @@
                     <div class="testimony-wrap py-4 pb-5">
                       <div
                         class="user-img mb-4"
-                        style="background-image: url(assets/images/person_2.jpg)"
+                        style="background-image: url(images/person_2.jpg)"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -626,7 +626,7 @@
                     <div class="testimony-wrap py-4 pb-5">
                       <div
                         class="user-img mb-4"
-                        style="background-image: url(assets/images/person_3.jpg)"
+                        style="background-image: url(images/person_3.jpg)"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -657,7 +657,7 @@
                     <div class="testimony-wrap py-4 pb-5">
                       <div
                         class="user-img mb-4"
-                        style="background-image: url(assets/images/person_1.jpg)"
+                        style="background-image: url(images/person_1.jpg)"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -688,7 +688,7 @@
                     <div class="testimony-wrap py-4 pb-5">
                       <div
                         class="user-img mb-4"
-                        style="background-image: url(assets/images/person_1.jpg)"
+                        style="background-image: url(images/person_1.jpg)"
                       >
                         <span
                           class="quote d-flex align-items-center justify-content-center"
@@ -732,7 +732,7 @@
               class="video-hero"
               style="
                 height: 800px;
-                background-image: url(assets/images/bg_1.jpg);
+                background-image: url(images/bg_1.jpg);
                 background-size: cover;
                 background-position: center center;
               "
@@ -760,7 +760,7 @@
 
     <section
       class="ftco-section ftco-menu"
-      style="background-image: url(assets/images/restaurant-pattern.jpg)"
+      style="background-image: url(images/restaurant-pattern.jpg)"
     >
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -774,7 +774,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img order-md-last"
-                style="background-image: url(assets/images/menu-1.jpg)"
+                style="background-image: url(images/menu-1.jpg)"
               ></div>
               <div class="desc pr-3 text-md-right">
                 <div class="d-md-flex text align-items-center">
@@ -793,7 +793,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img order-md-last"
-                style="background-image: url(assets/images/menu-2.jpg)"
+                style="background-image: url(images/menu-2.jpg)"
               ></div>
               <div class="desc pr-3 text-md-right">
                 <div class="d-md-flex text align-items-center">
@@ -812,7 +812,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img order-md-last"
-                style="background-image: url(assets/images/menu-3.jpg)"
+                style="background-image: url(images/menu-3.jpg)"
               ></div>
               <div class="desc pr-3 text-md-right">
                 <div class="d-md-flex text align-items-center">
@@ -831,7 +831,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img order-md-last"
-                style="background-image: url(assets/images/menu-4.jpg)"
+                style="background-image: url(images/menu-4.jpg)"
               ></div>
               <div class="desc pr-3 text-md-right">
                 <div class="d-md-flex text align-items-center">
@@ -853,7 +853,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img"
-                style="background-image: url(assets/images/menu-5.jpg)"
+                style="background-image: url(images/menu-5.jpg)"
               ></div>
               <div class="desc pl-3">
                 <div class="d-md-flex text align-items-center">
@@ -870,7 +870,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img"
-                style="background-image: url(assets/images/menu-6.jpg)"
+                style="background-image: url(images/menu-6.jpg)"
               ></div>
               <div class="desc pl-3">
                 <div class="d-md-flex text align-items-center">
@@ -887,7 +887,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img"
-                style="background-image: url(assets/images/menu-7.jpg)"
+                style="background-image: url(images/menu-7.jpg)"
               ></div>
               <div class="desc pl-3">
                 <div class="d-md-flex text align-items-center">
@@ -904,7 +904,7 @@
             <div class="pricing-entry d-flex ftco-animate">
               <div
                 class="img"
-                style="background-image: url(assets/images/menu-8.jpg)"
+                style="background-image: url(images/menu-8.jpg)"
               ></div>
               <div class="desc pl-3">
                 <div class="d-md-flex text align-items-center">
@@ -935,7 +935,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{route('blog-single')}}"
+                href="blog-single.html"
                 class="block-20"
                 style="background-image: url('images/image_1.jpg')"
               >
@@ -963,7 +963,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{route('blog-single')}}"
+                href="blog-single.html"
                 class="block-20"
                 style="background-image: url('images/image_2.jpg')"
               >
@@ -979,7 +979,7 @@
                   </div>
                 </div>
                 <h3 class="heading">
-                  <a href="{{route('about')}}"
+                  <a href="#"
                     >Even the all-powerful Pointing has no control about the
                     blind texts</a
                   >
@@ -991,7 +991,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{route('blog-single')}}"
+                href="blog-single.html"
                 class="block-20"
                 style="background-image: url('images/image_3.jpg')"
               >
@@ -1007,7 +1007,7 @@
                   </div>
                 </div>
                 <h3 class="heading">
-                  <a href="{{route('about')}}"
+                  <a href="#"
                     >Even the all-powerful Pointing has no control about the
                     blind texts</a
                   >
@@ -1033,7 +1033,7 @@
             <a
               href="images/insta-1.jpg"
               class="insta-img image-popup"
-              style="background-image: url(assets/images/insta-1.jpg)"
+              style="background-image: url(images/insta-1.jpg)"
             >
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
@@ -1044,7 +1044,7 @@
             <a
               href="images/insta-2.jpg"
               class="insta-img image-popup"
-              style="background-image: url(assets/images/insta-2.jpg)"
+              style="background-image: url(images/insta-2.jpg)"
             >
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
@@ -1055,7 +1055,7 @@
             <a
               href="images/insta-3.jpg"
               class="insta-img image-popup"
-              style="background-image: url(assets/images/insta-3.jpg)"
+              style="background-image: url(images/insta-3.jpg)"
             >
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
@@ -1066,7 +1066,7 @@
             <a
               href="images/insta-4.jpg"
               class="insta-img image-popup"
-              style="background-image: url(assets/images/insta-4.jpg)"
+              style="background-image: url(images/insta-4.jpg)"
             >
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
@@ -1077,7 +1077,7 @@
             <a
               href="images/insta-5.jpg"
               class="insta-img image-popup"
-              style="background-image: url(assets/images/insta-5.jpg)"
+              style="background-image: url(images/insta-5.jpg)"
             >
               <div class="icon d-flex justify-content-center">
                 <span class="icon-instagram align-self-center"></span>
@@ -1093,7 +1093,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">RoomRover</h2>
+              <h2 class="ftco-heading-2">Roxandrea</h2>
               <p>
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
@@ -1129,7 +1129,7 @@
               <h2 class="ftco-heading-2">Privacy</h2>
               <ul class="list-unstyled">
                 <li><a href="#" class="py-2 d-block">Career</a></li>
-                <li><a href="{{route('about')}}" class="py-2 d-block">About Us</a></li>
+                <li><a href="#" class="py-2 d-block">About Us</a></li>
                 <li><a href="#" class="py-2 d-block">Contact Us</a></li>
                 <li><a href="#" class="py-2 d-block">Services</a></li>
               </ul>
@@ -1143,19 +1143,20 @@
                   <li>
                     <span class="icon icon-map-marker"></span
                     ><span class="text"
-                      >Avenue Hassan II, Kénitra, Maroc</span
+                      >203 Fake St. Mountain View, San Francisco, California,
+                      USA</span
                     >
                   </li>
                   <li>
                     <a href="#"
                       ><span class="icon icon-phone"></span
-                      ><span class="text">+212 651 53 69 25</span></a
+                      ><span class="text">+2 392 3929 210</span></a
                     >
                   </li>
                   <li>
                     <a href="#"
                       ><span class="icon icon-envelope"></span
-                      ><span class="text">info@roomrover.com</span></a
+                      ><span class="text">info@yourdomain.com</span></a
                     >
                   </li>
                 </ul>
@@ -1193,22 +1194,23 @@
     </div>
 
     <script src="{{asset("assets/js/jquery.min.js")}}"></script>
-    <script src="{{asset("assets/js/jquery-migrate-3.0.1.min.js")}}"></script>
-    <script src="{{asset("assets/js/popper.min.js")}}"></script>
-    <script src="{{asset("assets/js/bootstrap.min.js")}}"></script>
-    <script src="{{asset("assets/js/jquery.easing.1.3.js")}}"></script>
-    <script src="{{asset("assets/js/jquery.waypoints.min.js")}}"></script>
-    <script src="{{asset("assets/js/jquery.stellar.min.js")}}"></script>
-    <script src="{{asset("assets/js/owl.carousel.min.js")}}"></script> 
-    <script src="{{asset("assets/js/jquery.magnific-popup.min.js")}}"></script>
-    <script src="{{asset("assets/js/aos.js")}}"></script>
-    <script src="{{asset("assets/js/jquery.animateNumber.min.js")}}"></script>
-    <script src="{{asset("assets/js/jquery.mb.YTPlayer.min.js")}}"></script>
-    <script src="{{asset("assets/js/bootstrap-datepicker.js")}}"></script>
-    <!-- // <script src="{{asset("assets/js/jquery.timepicker.min.js")}}"></script> -->
-    <script src="{{asset("assets/js/scrollax.min.js")}}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="{{asset("assets/js/google-map.js")}}"></script>
-    <script src="{{asset("assets/js/main.js")}}"></script>
+  <script src="{{asset("assets/js/jquery-migrate-3.0.1.min.js")}}"></script>
+  <script src="{{asset("assets/js/popper.min.js")}}"></script>
+  <script src="{{asset("assets/js/bootstrap.min.js")}}"></script>
+  <script src="{{asset("assets/js/jquery.easing.1.3.js")}}"></script>
+  <script src="{{asset("assets/js/jquery.waypoints.min.js")}}"></script>
+  <script src="{{asset("assets/js/jquery.stellar.min.js")}}"></script>
+  <script src="{{asset("assets/js/owl.carousel.min.js")}}"></script>
+  <script src="{{asset("assets/js/jquery.magnific-popup.min.js")}}"></script>
+  <script src="{{asset("assets/js/aos.js")}}"></script>
+  <script src="{{asset("assets/js/jquery.animateNumber.min.js")}}"></script>
+  <script src="{{asset("assets/js/jquery.mb.YTPlayer.min.js")}}"></script>
+  <script src="{{asset("assets/js/bootstrap-datepicker.js")}}"></script>
+  <!-- // <script src="{{asset("assets/js/jquery.timepicker.min.js")}}"></script> -->
+  <script src="{{asset("assets/js/scrollax.min.js")}}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{{asset("assets/js/google-map.js")}}"></script>
+  <script src="{{asset("assets/js/main.js")}}"></script>
+    
   </body>
 </html>

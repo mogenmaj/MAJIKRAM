@@ -30,19 +30,19 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="{{route('index')}}">Roxandrea</a>
+	      <a class="navbar-brand" href="index.html">Roxandrea</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="{{route('index')}}" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="{{route('rooms')}}" class="nav-link">Rooms</a></li>
-	          <li class="nav-item"><a href="{{route('restaurant')}}" class="nav-link">Restaurant</a></li>
-	          <li class="nav-item"><a href="{{route('about')}}" class="nav-link">About</a></li>
-	          <li class="nav-item active"><a href="{{route('blog')}}" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item active"><a href="rooms.html" class="nav-link">Rooms</a></li>
+	          <li class="nav-item"><a href="restaurant.html" class="nav-link">Restaurant</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
@@ -54,131 +54,107 @@
         <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
           <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
           	<div class="text">
-	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{{route('index')}}">Home</a></span> <span>Blog</span></p>
-	            <h1 class="mb-4 bread">Blog</h1>
+	            <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home</a></span> <span>About</span></p>
+	            <h1 class="mb-4 bread">Rooms</h1>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-		<section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Read Blog</span>
-            <h2>Recent Blog</h2>
-          </div>
-        </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="{{route('blog-single')}}" class="block-20" style="background-image: url('images/image_1.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="{{route('blog-single')}}" class="block-20" style="background-image: url('images/image_2.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="{{route('blog-single')}}" class="block-20" style="background-image: url('images/image_3.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="{{route('blog-single')}}" class="block-20" style="background-image: url('images/image_4.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
+
+    <section class="ftco-section bg-light ftco-no-pb">
+    	<div class="container-fluid px-0">
+    		<div class="row no-gutters justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Roxandrea Rooms</span>
+            <h2 class="mb-4">Hotel Master's Rooms</h2>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="{{route('blog-single')}}" class="block-20" style="background-image: url('images/image_5.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a href="{{route('blog-single')}}" class="block-20" style="background-image: url('images/image_6.jpg');">
-              </a>
-              <div class="text mt-3 text-center">
-              	<div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
-                </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+        </div>  
+    		<div class="row no-gutters">
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-1.jpg);"></a>
+    					<div class="half left-arrow d-flex align-items-center">
+    						<div class="text p-4 p-xl-5 text-center">
+    							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
+    							<p class="mb-0"><span class="price mr-1">$120.00</span> <span class="per">per night</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.html">Suite Room</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-5.jpg);"></a>
+    					<div class="half left-arrow d-flex align-items-center">
+    						<div class="text p-4 p-xl-5 text-center">
+    							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
+    							<p class="mb-0"><span class="price mr-1">$120.00</span> <span class="per">per night</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.html">Classic Room</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="#" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
+    					<div class="half right-arrow d-flex align-items-center">
+    						<div class="text p-4 p-xl-5 text-center">
+    							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
+    							<p class="mb-0"><span class="price mr-1">$120.00</span> <span class="per">per night</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.html">Family Room</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="#" class="img order-md-last" style="background-image: url(images/room-3.jpg);"></a>
+    					<div class="half right-arrow d-flex align-items-center">
+    						<div class="text p-4 p-xl-5 text-center">
+    							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
+    							<p class="mb-0"><span class="price mr-1">$120.00</span> <span class="per">per night</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.html">Deluxe Room</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-4.jpg);"></a>
+    					<div class="half left-arrow d-flex align-items-center">
+    						<div class="text p-4 p-xl-5 text-center">
+    							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
+    							<p class="mb-0"><span class="price mr-1">$120.00</span> <span class="per">per night</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.html">Luxury Room</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-lg-6">
+    				<div class="room-wrap d-md-flex">
+    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-6.jpg);"></a>
+    					<div class="half left-arrow d-flex align-items-center">
+    						<div class="text p-4 p-xl-5 text-center">
+    							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
+    							<p class="mb-0"><span class="price mr-1">$120.00</span> <span class="per">per night</span></p>
+	    						<h3 class="mb-3"><a href="rooms-single.html">Superior Room</a></h3>
+	    						<p class="pt-1"><a href="rooms-single.html" class="btn-custom px-3 py-2">View Room Details <span class="icon-long-arrow-right"></span></a></p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
     </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -265,6 +241,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="{{asset("assets/js/google-map.js")}}"></script>
   <script src="{{asset("assets/js/main.js")}}"></script>
+    
     
   </body>
 </html>
