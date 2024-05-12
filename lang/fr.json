@@ -1,13 +1,4 @@
 {
-<<<<<<< HEAD
-    "Customers":"Clients",
-    "invoices":"Factures",
-    "Receptionists":"Réceptionnistes",
-    "Reservations":"Réservations",
-    "Room":"Chambres",
-    "Room categories":"Catégories chambres"
-    }
-=======
     "invoice":"Factures",
     "room":"Chambres",
     "client":"Clients",
@@ -16,4 +7,3 @@
     "receptionist":"Réceptionnistes"
 
       }
->>>>>>> 89dacff1750e7217688b451bf729ec68ec0a0f05
