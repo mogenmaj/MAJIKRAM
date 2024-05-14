@@ -48,7 +48,7 @@
 	    </div>
 	  </nav>
     <!-- END nav -->
-		<div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
+		<div class="hero-wrap" style="background-image: url(assets/images/bg_1.jpg);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
@@ -75,7 +75,7 @@
     		<div class="row no-gutters">
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-1.jpg);"></a>
+    					<a href="rooms-single.html" class="img" style="background-image: url(assets/images/room-1.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -88,7 +88,7 @@
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-5.jpg);"></a>
+    					<a href="rooms-single.html" class="img" style="background-image: url(assets/images/room-5.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -102,7 +102,7 @@
 
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="#" class="img order-md-last" style="background-image: url(images/room-2.jpg);"></a>
+    					<a href="#" class="img order-md-last" style="background-image: url(assets/images/room-2.jpg);"></a>
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -115,7 +115,7 @@
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="#" class="img order-md-last" style="background-image: url(images/room-3.jpg);"></a>
+    					<a href="#" class="img order-md-last" style="background-image: url(assets/images/room-3.jpg);"></a>
     					<div class="half right-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -129,7 +129,7 @@
 
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-4.jpg);"></a>
+    					<a href="rooms-single.html" class="img" style="background-image: url(assets/images/room-4.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -142,7 +142,7 @@
     			</div>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="rooms-single.html" class="img" style="background-image: url(images/room-6.jpg);"></a>
+    					<a href="rooms-single.html" class="img" style="background-image: url(assets/images/room-6.jpg);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span><span class="ion-ios-star"></span></p>
@@ -241,7 +241,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="{{asset("assets/js/google-map.js")}}"></script>
   <script src="{{asset("assets/js/main.js")}}"></script>
-    
-    
+  
   </body>
 </html>

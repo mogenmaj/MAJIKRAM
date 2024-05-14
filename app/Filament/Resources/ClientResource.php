@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Filament\Resources;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\ToggleButtons;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
 use App\Filament\Resources\ClientResource\Pages;
@@ -26,10 +28,20 @@ class ClientResource extends Resource
     {
         return $form
             ->schema([
-                DatePicker::make('created_at')->native(false),
-                DatePicker::make('updated_at')->native(false),
-                DatePicker::make('birth_date')->native(false),
-            ]);
+                TextInput::make('first_name')->required()->label('First Name'),
+                TextInput::make('last_name')->required()->label('Last Name'),
+                TextInput::make('birth_date')->required()->label('Date of Birth'),
+                TextInput::make('address')->required()->label('Address'),
+                TextInput::make('country')->required()->label('Country'),
+                TextInput::make('city')->required()->label('City'),
+                ToggleButtons::make('status')->inline()->options([
+                    'active' => 'Active',
+                    'inactive' => 'Inactive',
+                ])->label('Status'),
+                TextInput::make('phone')->required()->label('Phone'),
+                TextInput::make('nationality')->required()->label('Nationality'),
+                TextInput::make('carte_number')->required()->label('Carte Number'),
+                            ]);
     }
 
     public static function table(Table $table): Table

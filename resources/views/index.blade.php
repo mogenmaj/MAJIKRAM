@@ -41,7 +41,7 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">Roxandrea</a>
+        <a class="navbar-brand" href="{{route('index')}}">Roxandrea</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -57,22 +57,22 @@
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="{{route('index')}}" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="rooms.html" class="nav-link">Rooms</a>
+              <a href="{{route('rooms')}}" class="nav-link">Rooms</a>
             </li>
             <li class="nav-item">
-              <a href="restaurant.html" class="nav-link">Restaurant</a>
+              <a href="{{route('restaurant')}}" class="nav-link">Restaurant</a>
             </li>
             <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
+              <a href="{{route('about')}}" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="blog.html" class="nav-link">Blog</a>
+              <a href="{{route('blog')}}" class="nav-link">Blog</a>
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
+              <a href="{{route('contact')}}" class="nav-link">Contact</a>
             </li>
           </ul>
         </div>
@@ -377,7 +377,7 @@
                 style="background-image: url(images/bg_3.jpg)"
               >
                 <div class="text text-center px-4 py-4">
-                  <h2>Welcome to <a href="index.html">Roxandrea</a> Hotel</h2>
+                  <h2>Welcome to <a href="{{route('index')}}">Roxandrea</a> Hotel</h2>
                   <p>
                     A small river named Duden flows by their place and supplies
                     it with the necessary regelialia.
@@ -406,9 +406,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="rooms.html">Suite Room</a></h3>
+                  <h3 class="mb-3"><a href="{{route('rooms')}}">Suite Room</a></h3>
                   <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
+                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -438,9 +438,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="rooms.html">Family Room</a></h3>
+                  <h3 class="mb-3"><a href="{{route('rooms')}}">Family Room</a></h3>
                   <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
+                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -469,9 +469,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="rooms.html">Deluxe Room</a></h3>
+                  <h3 class="mb-3"><a href="{{route('rooms')}}">Deluxe Room</a></h3>
                   <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
+                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -501,9 +501,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="rooms.html">Luxury Room</a></h3>
+                  <h3 class="mb-3"><a href="{{route('rooms')}}">Luxury Room</a></h3>
                   <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
+                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -532,9 +532,9 @@
                     <span class="price mr-1">$120.00</span>
                     <span class="per">per night</span>
                   </p>
-                  <h3 class="mb-3"><a href="rooms.html">Superior Room</a></h3>
+                  <h3 class="mb-3"><a href="{{route('rooms')}}">Superior Room</a></h3>
                   <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
+                    <a href="{{route('room-single')}}" class="btn-custom px-3 py-2"
                       >View Room Details
                       <span class="icon-long-arrow-right"></span
                     ></a>
@@ -935,7 +935,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="blog-single.html"
+                href="{{route('blog-single')}}"
                 class="block-20"
                 style="background-image: url('images/image_1.jpg')"
               >
@@ -963,7 +963,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="blog-single.html"
+                href="{{route('blog-single')}}"
                 class="block-20"
                 style="background-image: url('images/image_2.jpg')"
               >
@@ -991,7 +991,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="blog-single.html"
+                href="{{route('blog-single')}}"
                 class="block-20"
                 style="background-image: url('images/image_3.jpg')"
               >

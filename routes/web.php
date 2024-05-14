@@ -30,3 +30,4 @@ Route::get('index', function (Request $request) {
     return view('index');
 })->name('index');
 
+

@@ -1,11 +1,15 @@
 <?php
 
 namespace App\Filament\Resources;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\ToggleButtons;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\Select;
 use App\Filament\Resources\ReceptionistResource\Pages;
 use App\Filament\Resources\ReceptionistResource\RelationManagers;
 use App\Models\Receptionist;
+use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -26,7 +30,23 @@ class ReceptionistResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
+                    ->schema([
+                        TextInput::make('first_name')->required()->label('First Name'),
+TextInput::make('last_name')->required()->label('Last Name'),
+Select::make('user_id')
+    ->options(function (): array {
+        return User::all()->pluck('name', 'id')->all();
+    }),
+DatePicker::make('birth_date')->required()->label('Date of Birth'),
+TextInput::make('phone')->required()->label('Phone'),
+TextInput::make('email')->required()->label('Email'),
+TextInput::make('address')->required()->label('Address'),
+DatePicker::make('hire_date')->required()->label('Hire Date'),
+ToggleButtons::make('employment_status')->inline()->options([
+    'full_time' => 'Full Time',
+    'part_time' => 'Part Time',
+])->label('Employment Status'),
+                        
             ]);
     }
 
@@ -36,9 +56,15 @@ class ReceptionistResource extends Resource
             ->columns([
                 TextColumn::make('id'), 
                 TextColumn::make('user_id')->searchable()->toggleable()->sortable(),
-                TextColumn::make('created_at')->date()->searchable()->toggleable()->sortable(),
-                TextColumn::make('updated_at')->date()->searchable()->toggleable()->sortable(),
-            ])
+                TextColumn::make('first_name')->searchable()->toggleable()->sortable(),
+                TextColumn::make('last_name')->searchable()->toggleable()->sortable(),
+                TextColumn::make('birth_date')->searchable()->toggleable()->sortable(),
+                TextColumn::make('phone')->searchable()->toggleable()->sortable(),
+                TextColumn::make('email')->searchable()->toggleable()->sortable(),
+                TextColumn::make('address')->searchable()->toggleable()->sortable(),
+                TextColumn::make('hire_date')->searchable()->toggleable()->sortable(),
+                TextColumn::make('employment_status')->searchable()->toggleable()->sortable(),
+                                       ])
             ->filters([
                 //
             ])
