@@ -43,7 +43,6 @@ Home
         </div>
       </section>
     </div>
-
     <section class="ftco-booking ftco-section ftco-no-pt ftco-no-pb">
       <div class="container">
         <div class="row">
@@ -145,7 +144,8 @@ Home
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-wrap">
+    @foreach ($rooms as $room)
+     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-wrap">
       <div class="container">
         <div class="row no-gutters">
           <div class="col-md-3">
@@ -187,8 +187,13 @@ Home
               style="background-image: url(images/sleep.jpg)"
             >
               <div class="text text-center pb-2">
-                <h3 class="mb-0">Suites &amp; Rooms</h3>
-                <span>Special Rooms</span>
+                @foreach ($categories as $category)
+                  @if ($category->id == $room->category_id)
+                  <h3 class="mb-0">{{ $category->label }}</h3>
+                    
+                  @endif
+                @endforeach
+                <span>{{ $room->price }}</span>
                 <div class="d-flex mt-2 justify-content-center">
                   <div class="icon">
                     <a href="#"><span class="ion-ios-arrow-forward"></span></a>
@@ -201,6 +206,9 @@ Home
       </div>
     </section>
 
+    @endforeach
+
+{{--
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -294,6 +302,7 @@ Home
             <h2 class="mb-4">Hotel Master's Rooms</h2>
           </div>
         </div>
+
         <div class="row no-gutters">
           <div class="col-lg-6">
             <div class="room-wrap">
@@ -469,6 +478,7 @@ Home
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -686,7 +696,7 @@ Home
     <section
       class="ftco-section ftco-menu"
       style="background-image: url(images/restaurant-pattern.jpg)"
-    >
+    > --}}
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
