@@ -30,3 +30,4 @@ Route::get('room', function (Request $request) {
 })->name('room-single');
 
 
+Route::post('search', [RoomController::class, 'search'])->name('search');

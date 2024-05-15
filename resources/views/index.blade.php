@@ -1,214 +1,145 @@
-@extends("layouts.master")
+@extends('layouts.master')
 @section('title')
-Home
+    Home
 @endsection
 
 @section('content')
-            <div class="hero">
-      <div class="container-wrap d-flex justify-content-end align-items-end">
-        <a
-          href="https://www.youtube.com/watch?v=ism1XqnZJEg"
-          class="icon-video popup-vimeo d-flex justify-content-center align-items-center"
-        >
-          <span class="ion-ios-play play"></span>
-        </a>
-      </div>
-      <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image: url(images/bg_1.jpg)">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center">
-              <div class="col-md-8 ftco-animate">
-                <div class="text mb-5 pb-5">
-                  <h1 class="mb-3">MAJIKRAM</h1>
-                  <h2>More than a hotel... an experience</h2>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div class="hero">
+        <div class="container-wrap d-flex justify-content-end align-items-end">
+            <a href="https://www.youtube.com/watch?v=ism1XqnZJEg"
+                class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                <span class="ion-ios-play play"></span>
+            </a>
         </div>
+        <section class="home-slider owl-carousel">
+            <div class="slider-item" style="background-image: url(images/bg_1.jpg)">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-center">
+                        <div class="col-md-8 ftco-animate">
+                            <div class="text mb-5 pb-5">
+                                <h1 class="mb-3">MAJIKRAM</h1>
+                                <h2>More than a hotel... an experience</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <div class="slider-item" style="background-image: url(images/bg_2.jpg)">
-          <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center">
-              <div class="col-md-8 ftco-animate">
-                <div class="text mb-5 pb-5">
-                  <h1 class="mb-3">Experience Epic Beauty</h1>
-                  <h2>MAJIKRAM Hotel &amp; Resort</h2>
+            <div class="slider-item" style="background-image: url(images/bg_2.jpg)">
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="row no-gutters slider-text align-items-center">
+                        <div class="col-md-8 ftco-animate">
+                            <div class="text mb-5 pb-5">
+                                <h1 class="mb-3">Experience Epic Beauty</h1>
+                                <h2>MAJIKRAM Hotel &amp; Resort</h2>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </div>
     <section class="ftco-booking ftco-section ftco-no-pt ftco-no-pb">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 pr-1 aside-stretch">
-            <form action="#" class="booking-form">
-              <div class="row">
-                <div class="col-md d-flex py-md-4">
-                  <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
-                    <div class="wrap bg-white align-self-stretch py-3 px-4">
-                      <label for="#">Check-in Date</label>
-                      <input
-                        type="text"
-                        class="form-control checkin_date"
-                        placeholder="Check-in date"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md d-flex py-md-4">
-                  <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
-                    <div class="wrap bg-white align-self-stretch py-3 px-4">
-                      <label for="#">Check-out Date</label>
-                      <input
-                        type="text"
-                        class="form-control checkout_date"
-                        placeholder="Check-out date"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md d-flex py-md-4">
-                  <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
-                    <div class="wrap bg-white align-self-stretch py-3 px-4">
-                      <label for="#">Room</label>
-                      <div class="form-field">
-                        <div class="select-wrap">
-                          <div class="icon">
-                            <span class="ion-ios-arrow-down"></span>
-                          </div>
-                          <select name="" id="" class="form-control">
-                            <option value="">Suite</option>
-                            <option value="">Family Room</option>
-                            <option value="">Deluxe Room</option>
-                            <option value="">Classic Room</option>
-                            <option value="">Superior Room</option>
-                            <option value="">Luxury Room</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md d-flex py-md-4">
-                  <div
-                    class="form-group align-self-stretch d-flex align-items-end"
-                  >
-                    <div class="wrap bg-white align-self-stretch py-3 px-4">
-                      <label for="#">Guests</label>
-                      <div class="form-field">
-                        <div class="select-wrap">
-                          <div class="icon">
-                            <span class="ion-ios-arrow-down"></span>
-                          </div>
-                          <select name="" id="" class="form-control">
-                            <option value="">1 Adult</option>
-                            <option value="">2 Adult</option>
-                            <option value="">3 Adult</option>
-                            <option value="">4 Adult</option>
-                            <option value="">5 Adult</option>
-                            <option value="">6 Adult</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md d-flex">
-                  <div class="form-group d-flex align-self-stretch">
-                    <a
-                      href="#"
-                      class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"
-                      ><span
-                        >Check Availability
-                        <small>Best Price Guaranteed!</small></span
-                      ></a
-                    >
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 pr-1 aside-stretch">
 
-    @foreach ($rooms as $room)
-     <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-wrap">
-      <div class="container">
-        <div class="row no-gutters">
-          <div class="col-md-3">
-            <a
-              href="#"
-              class="services-wrap img align-items-end d-flex"
-              style="background-image: url(images/room-3.jpg)"
-            >
-              <div class="text text-center pb-2">
-                <h3>Special Rooms</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a
-              href="#"
-              class="services-wrap img align-items-end d-flex"
-              style="background-image: url(images/swimming-pool.jpg)"
-            >
-              <div class="text text-center pb-2">
-                <h3>Swimming Pool</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a
-              href="#"
-              class="services-wrap img align-items-end d-flex"
-              style="background-image: url(images/resto.jpg)"
-            >
-              <div class="text text-center pb-2">
-                <h3>Restaurant</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-3">
-            <div
-              class="services-wrap services-overlay img align-items-center d-flex"
-              style="background-image: url(images/sleep.jpg)"
-            >
-              <div class="text text-center pb-2">
-                @foreach ($categories as $category)
-                  @if ($category->id == $room->category_id)
-                  <h3 class="mb-0">{{ $category->label }}</h3>
-                    
-                  @endif
-                @endforeach
-                <span>{{ $room->price }}</span>
-                <div class="d-flex mt-2 justify-content-center">
-                  <div class="icon">
-                    <a href="#"><span class="ion-ios-arrow-forward"></span></a>
-                  </div>
+                    <form method="POST" action={{ route('search') }} class="booking-form">
+                      @csrf
+                        <div class="row">
+                            <div class="col-md d-flex py-md-4">
+                                <div class="form-group align-self-stretch d-flex align-items-end">
+                                    <div class="wrap bg-white align-self-stretch py-3 px-4">
+                                        <label for="#">Check-in Date</label>
+                                        <input type="text" class="form-control checkin_date"
+                                            placeholder="Check-in date" name="start_date" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md d-flex py-md-4">
+                                <div class="form-group align-self-stretch d-flex align-items-end">
+                                    <div class="wrap bg-white align-self-stretch py-3 px-4">
+                                        <label for="#">Check-out Date</label>
+                                        <input type="text" class="form-control checkout_date"
+                                            placeholder="Check-out date" name="end_date"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md d-flex py-md-4">
+                                <div class="form-group align-self-stretch d-flex align-items-end">
+                                    <div class="wrap bg-white align-self-stretch py-3 px-4">
+                                        <label for="#">Room Category</label>
+                                        <div class="form-field">
+                                            <div class="select-wrap">
+                                                <div class="icon">
+                                                    <span class="ion-ios-arrow-down"></span>
+                                                </div>
+                                                <select name="category" class="form-control">
+                                                    @foreach ($categories as $category)
+                                                        <option value={{ $category->id }}>{{ $category->label }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md d-flex">
+                                <div class="form-group d-flex align-self-stretch">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Check
+                                            Availability
+                                            <small>Best Price Guaranteed!</small></span>
+                                      </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    @endforeach
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-services-wrap">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center pt-4 ftco-animate">
+                    <span class="subheading">Available Rooms</span>
+                    <h2>Available Rooms</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                @foreach ($rooms as $index => $room)
+                    <div class="col-md-3 d-flex mb-4">
+                        <div class="services-wrap services-overlay img align-items-center d-flex"
+                            style="background-image: url(images/room-{{ $index + 1 }}.jpg)">
+                            <div class="text text-center pb-2">
+                                @foreach ($categories as $category)
+                                    @if ($category->id == $room->category_id)
+                                        <h3 class="mb-0">{{ $category->label }}</h3>
+                                    @endif
+                                @endforeach
+                                <span>{{ $room->price }}</span>
+                                <div class="d-flex mt-2 justify-content-center">
+                                    <div class="icon">
+                                        <a href="#"><span class="ion-ios-arrow-forward"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
 
-{{--
+
+    {{--
     <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
@@ -697,407 +628,339 @@ Home
       class="ftco-section ftco-menu"
       style="background-image: url(images/restaurant-pattern.jpg)"
     > --}}
-      <div class="container">
+    <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Restaurant</span>
-            <h2>Restaurant</h2>
-          </div>
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <span class="subheading">Restaurant</span>
+                <h2>Restaurant</h2>
+            </div>
         </div>
         <div class="row">
-          <div class="col-md-6">
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img order-md-last"
-                style="background-image: url(images/menu-1.jpg)"
-              ></div>
-              <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
-                  <h3 class="order-md-last heading-left">
-                    <span>Grilled Crab with Onion</span>
-                  </h3>
-                  <span class="price price-left">$20.00</span>
+            <div class="col-md-6">
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img order-md-last" style="background-image: url(images/menu-1.jpg)"></div>
+                    <div class="desc pr-3 text-md-right">
+                        <div class="d-md-flex text align-items-center">
+                            <h3 class="order-md-last heading-left">
+                                <span>Grilled Crab with Onion</span>
+                            </h3>
+                            <span class="price price-left">$20.00</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img order-md-last" style="background-image: url(images/menu-2.jpg)"></div>
+                    <div class="desc pr-3 text-md-right">
+                        <div class="d-md-flex text align-items-center">
+                            <h3 class="order-md-last heading-left">
+                                <span>Grilled Beef with potatoes</span>
+                            </h3>
+                            <span class="price price-left">$29.00</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img order-md-last" style="background-image: url(images/menu-3.jpg)"></div>
+                    <div class="desc pr-3 text-md-right">
+                        <div class="d-md-flex text align-items-center">
+                            <h3 class="order-md-last heading-left">
+                                <span>Grilled Beef with potatoes</span>
+                            </h3>
+                            <span class="price price-left">$20.00</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img order-md-last" style="background-image: url(images/menu-4.jpg)"></div>
+                    <div class="desc pr-3 text-md-right">
+                        <div class="d-md-flex text align-items-center">
+                            <h3 class="order-md-last heading-left">
+                                <span>Grilled Beef with potatoes</span>
+                            </h3>
+                            <span class="price price-left">$20.00</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img order-md-last"
-                style="background-image: url(images/menu-2.jpg)"
-              ></div>
-              <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
-                  <h3 class="order-md-last heading-left">
-                    <span>Grilled Beef with potatoes</span>
-                  </h3>
-                  <span class="price price-left">$29.00</span>
-                </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img order-md-last"
-                style="background-image: url(images/menu-3.jpg)"
-              ></div>
-              <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
-                  <h3 class="order-md-last heading-left">
-                    <span>Grilled Beef with potatoes</span>
-                  </h3>
-                  <span class="price price-left">$20.00</span>
-                </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img order-md-last"
-                style="background-image: url(images/menu-4.jpg)"
-              ></div>
-              <div class="desc pr-3 text-md-right">
-                <div class="d-md-flex text align-items-center">
-                  <h3 class="order-md-last heading-left">
-                    <span>Grilled Beef with potatoes</span>
-                  </h3>
-                  <span class="price price-left">$20.00</span>
-                </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-6">
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img"
-                style="background-image: url(images/menu-5.jpg)"
-              ></div>
-              <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
-                  <h3><span>Grilled Beef with potatoes</span></h3>
-                  <span class="price">$49.91</span>
+            <div class="col-md-6">
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img" style="background-image: url(images/menu-5.jpg)"></div>
+                    <div class="desc pl-3">
+                        <div class="d-md-flex text align-items-center">
+                            <h3><span>Grilled Beef with potatoes</span></h3>
+                            <span class="price">$49.91</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img" style="background-image: url(images/menu-6.jpg)"></div>
+                    <div class="desc pl-3">
+                        <div class="d-md-flex text align-items-center">
+                            <h3><span>Ultimate Overload</span></h3>
+                            <span class="price">$20.00</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img" style="background-image: url(images/menu-7.jpg)"></div>
+                    <div class="desc pl-3">
+                        <div class="d-md-flex text align-items-center">
+                            <h3><span>Grilled Beef with potatoes</span></h3>
+                            <span class="price">$20.00</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img" style="background-image: url(images/menu-8.jpg)"></div>
+                    <div class="desc pl-3">
+                        <div class="d-md-flex text align-items-center">
+                            <h3><span>Ham &amp; Pineapple</span></h3>
+                            <span class="price">$20.00</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                                A small river named Duden flows by their place and supplies
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img"
-                style="background-image: url(images/menu-6.jpg)"
-              ></div>
-              <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
-                  <h3><span>Ultimate Overload</span></h3>
-                  <span class="price">$20.00</span>
-                </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img"
-                style="background-image: url(images/menu-7.jpg)"
-              ></div>
-              <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
-                  <h3><span>Grilled Beef with potatoes</span></h3>
-                  <span class="price">$20.00</span>
-                </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="pricing-entry d-flex ftco-animate">
-              <div
-                class="img"
-                style="background-image: url(images/menu-8.jpg)"
-              ></div>
-              <div class="desc pl-3">
-                <div class="d-md-flex text align-items-center">
-                  <h3><span>Ham &amp; Pineapple</span></h3>
-                  <span class="price">$20.00</span>
-                </div>
-                <div class="d-block">
-                  <p>
-                    A small river named Duden flows by their place and supplies
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
     </section>
 
     <section class="ftco-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Read Blog</span>
-            <h2>Recent Blog</h2>
-          </div>
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Read Blog</span>
+                    <h2>Recent Blog</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="" class="block-20" style="background-image: url('images/image_1.jpg')">
+                        </a>
+                        <div class="text mt-3 text-center">
+                            <div class="meta mb-2">
+                                <div><a href="#">July 03, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div>
+                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                                </div>
+                            </div>
+                            <h3 class="heading">
+                                <a href="#">Even the all-powerful Pointing has no control about the
+                                    blind texts</a>
+                            </h3>
+                            <p><a href="#" class="btn-custom">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="" class="block-20" style="background-image: url('images/image_2.jpg')">
+                        </a>
+                        <div class="text mt-3 text-center">
+                            <div class="meta mb-2">
+                                <div><a href="#">July 03, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div>
+                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                                </div>
+                            </div>
+                            <h3 class="heading">
+                                <a href="#">Even the all-powerful Pointing has no control about the
+                                    blind texts</a>
+                            </h3>
+                            <p><a href="#" class="btn-custom">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <a href="" class="block-20" style="background-image: url('images/image_3.jpg')">
+                        </a>
+                        <div class="text mt-3 text-center">
+                            <div class="meta mb-2">
+                                <div><a href="#">July 03, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div>
+                                    <a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+                                </div>
+                            </div>
+                            <h3 class="heading">
+                                <a href="#">Even the all-powerful Pointing has no control about the
+                                    blind texts</a>
+                            </h3>
+                            <p><a href="#" class="btn-custom">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href=""
-                class="block-20"
-                style="background-image: url('images/image_1.jpg')"
-              >
-              </a>
-              <div class="text mt-3 text-center">
-                <div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </div>
-                </div>
-                <h3 class="heading">
-                  <a href="#"
-                    >Even the all-powerful Pointing has no control about the
-                    blind texts</a
-                  >
-                </h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href=""
-                class="block-20"
-                style="background-image: url('images/image_2.jpg')"
-              >
-              </a>
-              <div class="text mt-3 text-center">
-                <div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </div>
-                </div>
-                <h3 class="heading">
-                  <a href="#"
-                    >Even the all-powerful Pointing has no control about the
-                    blind texts</a
-                  >
-                </h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-            <div class="blog-entry align-self-stretch">
-              <a
-                href=""
-                class="block-20"
-                style="background-image: url('images/image_3.jpg')"
-              >
-              </a>
-              <div class="text mt-3 text-center">
-                <div class="meta mb-2">
-                  <div><a href="#">July 03, 2019</a></div>
-                  <div><a href="#">Admin</a></div>
-                  <div>
-                    <a href="#" class="meta-chat"
-                      ><span class="icon-chat"></span> 3</a
-                    >
-                  </div>
-                </div>
-                <h3 class="heading">
-                  <a href="#"
-                    >Even the all-powerful Pointing has no control about the
-                    blind texts</a
-                  >
-                </h3>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="instagram">
-      <div class="container-fluid">
-        <div class="row no-gutters justify-content-center pb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-            <span class="subheading">Photos</span>
-            <h2><span>Instagram</span></h2>
-          </div>
+        <div class="container-fluid">
+            <div class="row no-gutters justify-content-center pb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Photos</span>
+                    <h2><span>Instagram</span></h2>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-sm-12 col-md ftco-animate">
+                    <a href="images/insta-1.jpg" class="insta-img image-popup"
+                        style="background-image: url(images/insta-1.jpg)">
+                        <div class="icon d-flex justify-content-center">
+                            <span class="icon-instagram align-self-center"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md ftco-animate">
+                    <a href="images/insta-2.jpg" class="insta-img image-popup"
+                        style="background-image: url(images/insta-2.jpg)">
+                        <div class="icon d-flex justify-content-center">
+                            <span class="icon-instagram align-self-center"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md ftco-animate">
+                    <a href="images/insta-3.jpg" class="insta-img image-popup"
+                        style="background-image: url(images/insta-3.jpg)">
+                        <div class="icon d-flex justify-content-center">
+                            <span class="icon-instagram align-self-center"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md ftco-animate">
+                    <a href="images/insta-4.jpg" class="insta-img image-popup"
+                        style="background-image: url(images/insta-4.jpg)">
+                        <div class="icon d-flex justify-content-center">
+                            <span class="icon-instagram align-self-center"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md ftco-animate">
+                    <a href="images/insta-5.jpg" class="insta-img image-popup"
+                        style="background-image: url(images/insta-5.jpg)">
+                        <div class="icon d-flex justify-content-center">
+                            <span class="icon-instagram align-self-center"></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
-        <div class="row no-gutters">
-          <div class="col-sm-12 col-md ftco-animate">
-            <a
-              href="images/insta-1.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/insta-1.jpg)"
-            >
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a
-              href="images/insta-2.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/insta-2.jpg)"
-            >
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a
-              href="images/insta-3.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/insta-3.jpg)"
-            >
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a
-              href="images/insta-4.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/insta-4.jpg)"
-            >
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-12 col-md ftco-animate">
-            <a
-              href="images/insta-5.jpg"
-              class="insta-img image-popup"
-              style="background-image: url(images/insta-5.jpg)"
-            >
-              <div class="icon d-flex justify-content-center">
-                <span class="icon-instagram align-self-center"></span>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">MAJIKRAM</h2>
-              <p>
-                Majikram Hotel is committed to providing an exceptional experience for its guests, blending comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a pleasant stay. Located in the heart of the city, Majikram offers easy access to local attractions. Book now for an unforgettable experience.
-              </p>
-              <ul
-                class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
-              >
-                <li class="ftco-animate">
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-              </ul>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">MAJIKRAM</h2>
+                        <p>
+                            Majikram Hotel is committed to providing an exceptional experience for its guests, blending
+                            comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a
+                            pleasant stay. Located in the heart of the city, Majikram offers easy access to local
+                            attractions. Book now for an unforgettable experience.
+                        </p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate">
+                                <a href="#"><span class="icon-twitter"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="#"><span class="icon-facebook"></span></a>
+                            </li>
+                            <li class="ftco-animate">
+                                <a href="#"><span class="icon-instagram"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Useful Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Blog</a></li>
+                            <li><a href="#" class="py-2 d-block">Rooms</a></li>
+                            <li><a href="#" class="py-2 d-block">Amenities</a></li>
+                            <li><a href="#" class="py-2 d-block">Gift Card</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Privacy</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Career</a></li>
+                            <li><a href="#" class="py-2 d-block">About Us</a></li>
+                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                            <li><a href="#" class="py-2 d-block">Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li>
+                                    <span class="icon icon-map-marker"></span><span class="text"> 203 Avenue Hassan II,
+                                        Kénitra, Maroc</span>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon icon-phone"></span><span class="text">+212 651
+                                            53 69 25</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="icon icon-envelope"></span><span
+                                            class="text">info@majikram.com</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-5">
-              <h2 class="ftco-heading-2">Useful Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Blog</a></li>
-                <li><a href="#" class="py-2 d-block">Rooms</a></li>
-                <li><a href="#" class="py-2 d-block">Amenities</a></li>
-                <li><a href="#" class="py-2 d-block">Gift Card</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Privacy</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Career</a></li>
-                <li><a href="#" class="py-2 d-block">About Us</a></li>
-                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
-                <li><a href="#" class="py-2 d-block">Services</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have a Questions?</h2>
-              <div class="block-23 mb-3">
-                <ul>
-                  <li>
-                    <span class="icon icon-map-marker"></span
-                    ><span class="text"
-                      > 203 Avenue Hassan II, Kénitra, Maroc</span
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><span class="icon icon-phone"></span
-                      ><span class="text">+212 651 53 69 25</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><span class="icon icon-envelope"></span
-                      ><span class="text">info@majikram.com</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            <div class="row"></div>
         </div>
-        <div class="row"></div>
-      </div>
     </footer>
 @endsection
