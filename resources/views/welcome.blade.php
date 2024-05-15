@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>RoomRover - Free Bootstrap 4 Template by Colorlib</title>
+    <title>MAJIKRAM - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -41,7 +41,7 @@
       id="ftco-navbar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html">RoomRover</a>
+        <a class="navbar-brand" href="indeMAJIKRAM</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -95,7 +95,7 @@
             <div class="row no-gutters slider-text align-items-center">
               <div class="col-md-8 ftco-animate">
                 <div class="text mb-5 pb-5">
-                  <h1 class="mb-3">RoomRover</h1>
+                  <h1 classMAJIKRAM</h1>
                   <h2>More than a hotel... an experience</h2>
                 </div>
               </div>
@@ -110,7 +110,7 @@
               <div class="col-md-8 ftco-animate">
                 <div class="text mb-5 pb-5">
                   <h1 class="mb-3">Experience Epic Beauty</h1>
-                  <h2>RoomRover Hotel &amp; Resort</h2>
+          MAJIKRAM Hotel &amp; Resort</h2>
                 </div>
               </div>
             </div>
@@ -280,7 +280,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Welcome to RoomRover Hotel</span>
+            <span class="subheading">WelMAJIKRAM Hotel</span>
             <h2 class="mb-4">A New Vision of Luxury Hotel</h2>
           </div>
         </div>
@@ -365,7 +365,7 @@
       <div class="container-fluid px-0">
         <div class="row no-gutters justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">RoomRover Rooms</span>
+            <span class="subhMAJIKRAM Rooms</span>
             <h2 class="mb-4">Hotel Master's Rooms</h2>
           </div>
         </div>
@@ -377,7 +377,7 @@
                 style="background-image: url(assets/images/bg_3.jpg)"
               >
                 <div class="text text-center px-4 py-4">
-                  <h2>Welcome to <a href="{{route('index')}}">RoomRover</a> Hotel</h2>
+                  <h2>Welcome to <a href="{{route('indMAJIKRAM</a> Hotel</h2>
                   <p>
                     A small river named Duden flows by their place and supplies
                     it with the necessary regelialia.
@@ -408,8 +408,8 @@
                   </p>
                   <h3 class="mb-3"><a href="{{route('rooms')}}">Suite Room</a></h3>
                   <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
-                      >View Room Details
+                    <a href="{{ route('room-single') }}" class="btn-custom px-3 py-2"
+                      >View Room Details ( test )
                       <span class="icon-long-arrow-right"></span
                     ></a>
                   </p>
@@ -418,131 +418,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
-              <a
-                href="#"
-                class="img order-md-last"
-                style="background-image: url(assets/images/room-2.jpg)"
-              ></a>
-              <div class="half right-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
-                  <p class="star mb-0">
-                    <span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span>
-                  </p>
-                  <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
-                    <span class="per">per night</span>
-                  </p>
-                  <h3 class="mb-3"><a href="rooms.html">Family Room</a></h3>
-                  <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
-                      >View Room Details
-                      <span class="icon-long-arrow-right"></span
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
-              <a
-                href="#"
-                class="img order-md-last"
-                style="background-image: url(assets/images/room-3.jpg)"
-              ></a>
-              <div class="half right-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
-                  <p class="star mb-0">
-                    <span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span>
-                  </p>
-                  <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
-                    <span class="per">per night</span>
-                  </p>
-                  <h3 class="mb-3"><a href="rooms.html">Deluxe Room</a></h3>
-                  <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
-                      >View Room Details
-                      <span class="icon-long-arrow-right"></span
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
-              <a
-                href="#"
-                class="img"
-                style="background-image: url(assets/images/room-4.jpg)"
-              ></a>
-              <div class="half left-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
-                  <p class="star mb-0">
-                    <span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span>
-                  </p>
-                  <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
-                    <span class="per">per night</span>
-                  </p>
-                  <h3 class="mb-3"><a href="rooms.html">Luxury Room</a></h3>
-                  <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
-                      >View Room Details
-                      <span class="icon-long-arrow-right"></span
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="room-wrap d-md-flex">
-              <a
-                href="#"
-                class="img"
-                style="background-image: url(assets/images/room-6.jpg)"
-              ></a>
-              <div class="half left-arrow d-flex align-items-center">
-                <div class="text p-4 p-xl-5 text-center">
-                  <p class="star mb-0">
-                    <span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span
-                    ><span class="ion-ios-star"></span>
-                  </p>
-                  <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
-                    <span class="per">per night</span>
-                  </p>
-                  <h3 class="mb-3"><a href="rooms.html">Superior Room</a></h3>
-                  <p class="pt-1">
-                    <a href="room-single.html" class="btn-custom px-3 py-2"
-                      >View Room Details
-                      <span class="icon-long-arrow-right"></span
-                    ></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -1093,7 +969,7 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">RoomRover</h2>
+              <h2 class="ftco-heaMAJIKRAM</h2>
               <p>
                 Far far away, behind the word mountains, far from the countries
                 Vokalia and Consonantia, there live the blind texts.
@@ -1155,7 +1031,7 @@
                   <li>
                     <a href="#"
                       ><span class="icon icon-envelope"></span
-                      ><span class="text">info@roomrover.com</span></a
+                      ><span class="texMAJIKRAM.com</span></a
                     >
                   </li>
                 </ul>

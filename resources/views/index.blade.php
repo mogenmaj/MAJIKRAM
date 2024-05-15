@@ -1,85 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Roxandrea - Free Bootstrap 4 Template by Colorlib</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+@extends("layouts.master")
+@section('title')
+Home
+@endsection
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="{{asset('assets/css/open-iconic-bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}" />
-
-    <link rel="stylesheet" href="{{asset('assets/css/owl.carousel.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/owl.theme.default.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/magnific-popup.css')}}" />
-
-    <link rel="stylesheet" href="{{asset('assets/css/aos.css')}}" />
-
-    <link rel="stylesheet" href="{{asset('assets/css/ionicons.min.css')}}" />
-
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-datepicker.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/jquery.timepicker.css')}}" />
-
-    <link rel="stylesheet" href="{{asset('assets/css/flaticon.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/icomoon.css')}}" />
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}" />
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-      id="ftco-navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="{{route('index')}}">Roxandrea</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="oi oi-menu"></span> Menu
-        </button>
-
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a href="{{route('index')}}" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{route('rooms')}}" class="nav-link">Rooms</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{route('restaurant')}}" class="nav-link">Restaurant</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{route('about')}}" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{route('blog')}}" class="nav-link">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a href="{{route('contact')}}" class="nav-link">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- END nav -->
-    <div class="hero">
+@section('content')
+            <div class="hero">
       <div class="container-wrap d-flex justify-content-end align-items-end">
         <a
           href="https://www.youtube.com/watch?v=ism1XqnZJEg"
@@ -95,7 +20,7 @@
             <div class="row no-gutters slider-text align-items-center">
               <div class="col-md-8 ftco-animate">
                 <div class="text mb-5 pb-5">
-                  <h1 class="mb-3">Roxandrea</h1>
+                  <h1 class="mb-3">MAJIKRAM</h1>
                   <h2>More than a hotel... an experience</h2>
                 </div>
               </div>
@@ -110,7 +35,7 @@
               <div class="col-md-8 ftco-animate">
                 <div class="text mb-5 pb-5">
                   <h1 class="mb-3">Experience Epic Beauty</h1>
-                  <h2>Roxandrea Hotel &amp; Resort</h2>
+                  <h2>MAJIKRAM Hotel &amp; Resort</h2>
                 </div>
               </div>
             </div>
@@ -280,7 +205,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Welcome to Roxandrea Hotel</span>
+            <span class="subheading">Welcome to MAJIKRAMM Hotel</span>
             <h2 class="mb-4">A New Vision of Luxury Hotel</h2>
           </div>
         </div>
@@ -365,7 +290,7 @@
       <div class="container-fluid px-0">
         <div class="row no-gutters justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Roxandrea Rooms</span>
+            <span class="subheading">MAJIKRAM Rooms</span>
             <h2 class="mb-4">Hotel Master's Rooms</h2>
           </div>
         </div>
@@ -377,7 +302,7 @@
                 style="background-image: url(images/bg_3.jpg)"
               >
                 <div class="text text-center px-4 py-4">
-                  <h2>Welcome to <a href="{{route('index')}}">Roxandrea</a> Hotel</h2>
+                  <h2>Welcome to <a href="{{route('index')}}">MAJIKRAM</a> Hotel</h2>
                   <p>
                     A small river named Duden flows by their place and supplies
                     it with the necessary regelialia.
@@ -403,7 +328,7 @@
                     ><span class="ion-ios-star"></span>
                   </p>
                   <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
+                    <span class="price mr-1">$220.00</span>
                     <span class="per">per night</span>
                   </p>
                   <h3 class="mb-3"><a href="{{route('rooms')}}">Suite Room</a></h3>
@@ -435,7 +360,7 @@
                     ><span class="ion-ios-star"></span>
                   </p>
                   <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
+                    <span class="price mr-1">$150.00</span>
                     <span class="per">per night</span>
                   </p>
                   <h3 class="mb-3"><a href="{{route('rooms')}}">Family Room</a></h3>
@@ -466,7 +391,7 @@
                     ><span class="ion-ios-star"></span>
                   </p>
                   <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
+                    <span class="price mr-1">$200.00</span>
                     <span class="per">per night</span>
                   </p>
                   <h3 class="mb-3"><a href="{{route('rooms')}}">Deluxe Room</a></h3>
@@ -498,7 +423,7 @@
                     ><span class="ion-ios-star"></span>
                   </p>
                   <p class="mb-0">
-                    <span class="price mr-1">$120.00</span>
+                    <span class="price mr-1">$180.00</span>
                     <span class="per">per night</span>
                   </p>
                   <h3 class="mb-3"><a href="{{route('rooms')}}">Luxury Room</a></h3>
@@ -935,7 +860,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{route('blog-single')}}"
+                href=""
                 class="block-20"
                 style="background-image: url('images/image_1.jpg')"
               >
@@ -963,7 +888,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{route('blog-single')}}"
+                href=""
                 class="block-20"
                 style="background-image: url('images/image_2.jpg')"
               >
@@ -991,7 +916,7 @@
           <div class="col-md-4 d-flex ftco-animate">
             <div class="blog-entry align-self-stretch">
               <a
-                href="{{route('blog-single')}}"
+                href=""
                 class="block-20"
                 style="background-image: url('images/image_3.jpg')"
               >
@@ -1093,10 +1018,9 @@
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Roxandrea</h2>
+              <h2 class="ftco-heading-2">MAJIKRAM</h2>
               <p>
-                Far far away, behind the word mountains, far from the countries
-                Vokalia and Consonantia, there live the blind texts.
+                Majikram Hotel is committed to providing an exceptional experience for its guests, blending comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a pleasant stay. Located in the heart of the city, Majikram offers easy access to local attractions. Book now for an unforgettable experience.
               </p>
               <ul
                 class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
@@ -1143,20 +1067,19 @@
                   <li>
                     <span class="icon icon-map-marker"></span
                     ><span class="text"
-                      >203 Fake St. Mountain View, San Francisco, California,
-                      USA</span
+                      > 203 Avenue Hassan II, Kénitra, Maroc</span
                     >
                   </li>
                   <li>
                     <a href="#"
                       ><span class="icon icon-phone"></span
-                      ><span class="text">+2 392 3929 210</span></a
+                      ><span class="text">+212 651 53 69 25</span></a
                     >
                   </li>
                   <li>
                     <a href="#"
                       ><span class="icon icon-envelope"></span
-                      ><span class="text">info@yourdomain.com</span></a
+                      ><span class="text">info@majikram.com</span></a
                     >
                   </li>
                 </ul>
@@ -1167,50 +1090,4 @@
         <div class="row"></div>
       </div>
     </footer>
-
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
-        <circle
-          class="path-bg"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke="#eeeeee"
-        />
-        <circle
-          class="path"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke="#F96D00"
-        />
-      </svg>
-    </div>
-
-    <script src="{{asset("assets/js/jquery.min.js")}}"></script>
-  <script src="{{asset("assets/js/jquery-migrate-3.0.1.min.js")}}"></script>
-  <script src="{{asset("assets/js/popper.min.js")}}"></script>
-  <script src="{{asset("assets/js/bootstrap.min.js")}}"></script>
-  <script src="{{asset("assets/js/jquery.easing.1.3.js")}}"></script>
-  <script src="{{asset("assets/js/jquery.waypoints.min.js")}}"></script>
-  <script src="{{asset("assets/js/jquery.stellar.min.js")}}"></script>
-  <script src="{{asset("assets/js/owl.carousel.min.js")}}"></script>
-  <script src="{{asset("assets/js/jquery.magnific-popup.min.js")}}"></script>
-  <script src="{{asset("assets/js/aos.js")}}"></script>
-  <script src="{{asset("assets/js/jquery.animateNumber.min.js")}}"></script>
-  <script src="{{asset("assets/js/jquery.mb.YTPlayer.min.js")}}"></script>
-  <script src="{{asset("assets/js/bootstrap-datepicker.js")}}"></script>
-  <!-- // <script src="{{asset("assets/js/jquery.timepicker.min.js")}}"></script> -->
-  <script src="{{asset("assets/js/scrollax.min.js")}}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="{{asset("assets/js/google-map.js")}}"></script>
-  <script src="{{asset("assets/js/main.js")}}"></script>
-    
-  </body>
-</html>
+@endsection

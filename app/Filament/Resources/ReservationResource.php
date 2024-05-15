@@ -41,7 +41,6 @@ class ReservationResource extends Resource
                 TextColumn::make('id'), 
                 TextColumn::make('start_date')->date()->searchable()->toggleable()->sortable(),
                 TextColumn::make('end_date')->date()->searchable()->toggleable()->sortable(),
-                TextInput::make('room_id')->required()->label('Room ID'),
                                ])
             ->filters([
                 //
