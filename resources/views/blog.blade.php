@@ -143,7 +143,7 @@ Blog
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Roxandrea</h2>
-              <p>Majikram Hotel is committed to providing an exceptional experience for its guests, blending comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a pleasant stay. Located in the heart of the city, Majikram offers easy access to local attractions. Book now for an unforgettable experience.</p>
+              <p>MAJIKROOM Hotel is committed to providing an exceptional experience for its guests, blending comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a pleasant stay. Located in the heart of the city, MAJIKROOM offers easy access to local attractions. Book now for an unforgettable experience.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -180,7 +180,7 @@ Blog
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">203 Avenue Hassan II, Kénitra, Maroc</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+212 651 53 69 25</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@majikram.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@mAJIKROOM.com</span></a></li>
 	              </ul>
 	            </div>
             </div>

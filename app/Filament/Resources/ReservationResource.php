@@ -28,8 +28,8 @@ class ReservationResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('start_date')->required()->label('Start Date'),
-                TextInput::make('end_name')->required()->label('End Date'),
+                DatePicker::make('start_date')->native(false),
+                DatePicker::make('end_date')->native(false),
                     ]);
     }
 

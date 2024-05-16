@@ -18,7 +18,7 @@
                     <div class="row no-gutters slider-text align-items-center">
                         <div class="col-md-8 ftco-animate">
                             <div class="text mb-5 pb-5">
-                                <h1 class="mb-3">MAJIKRAM</h1>
+                                <h1 class="mb-3">MAJIKROOM</h1>
                                 <h2>More than a hotel... an experience</h2>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                         <div class="col-md-8 ftco-animate">
                             <div class="text mb-5 pb-5">
                                 <h1 class="mb-3">Experience Epic Beauty</h1>
-                                <h2>MAJIKRAM Hotel &amp; Resort</h2>
+                                <h2>MAJIKROOM Hotel &amp; Resort</h2>
                             </div>
                         </div>
                     </div>
@@ -144,7 +144,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">Welcome to MAJIKRAMM Hotel</span>
+            <span class="subheading">Welcome to MAJIKROOMM Hotel</span>
             <h2 class="mb-4">A New Vision of Luxury Hotel</h2>
           </div>
         </div>
@@ -229,7 +229,7 @@
       <div class="container-fluid px-0">
         <div class="row no-gutters justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-            <span class="subheading">MAJIKRAM Rooms</span>
+            <span class="subheading">MAJIKROOM Rooms</span>
             <h2 class="mb-4">Hotel Master's Rooms</h2>
           </div>
         </div>
@@ -242,7 +242,7 @@
                 style="background-image: url(images/bg_3.jpg)"
               >
                 <div class="text text-center px-4 py-4">
-                  <h2>Welcome to <a href="{{route('index')}}">MAJIKRAM</a> Hotel</h2>
+                  <h2>Welcome to <a href="{{route('index')}}">MAJIKROOM</a> Hotel</h2>
                   <p>
                     A small river named Duden flows by their place and supplies
                     it with the necessary regelialia.
@@ -896,11 +896,11 @@
             <div class="row mb-5">
                 <div class="col-md">
                     <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">MAJIKRAM</h2>
+                        <h2 class="ftco-heading-2">MAJIKROOM</h2>
                         <p>
-                            Majikram Hotel is committed to providing an exceptional experience for its guests, blending
+                            MAJIKROOM Hotel is committed to providing an exceptional experience for its guests, blending
                             comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a
-                            pleasant stay. Located in the heart of the city, Majikram offers easy access to local
+                            pleasant stay. Located in the heart of the city, MAJIKROOM offers easy access to local
                             attractions. Book now for an unforgettable experience.
                         </p>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
@@ -953,7 +953,7 @@
                                 </li>
                                 <li>
                                     <a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">info@majikram.com</span></a>
+                                            class="text">info@majikroom.com</span></a>
                                 </li>
                             </ul>
                         </div>
