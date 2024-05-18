@@ -35,9 +35,7 @@ class ReceptionistPanelProvider extends PanelProvider
             ])
             ->discoverWidgets(in: app_path('Filament/Receptionist/Widgets'), for: 'App\\Filament\\Receptionist\\Widgets')
             ->widgets([
-                Widgets\AccountWidget::class,
-                Widgets\FilamentInfoWidget::class,
-            ])
+                            ])
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
