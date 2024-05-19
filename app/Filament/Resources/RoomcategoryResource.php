@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Filament\Resources;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\ToggleButtons;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
 use App\Filament\Resources\RoomcategoryResource\Pages;
@@ -27,6 +29,14 @@ class RoomcategoryResource extends Resource
     {
         return $form
             ->schema([
+                ToggleButtons::make('label')->inline()->options([
+                    'suite_room' => 'Suite Room',
+                    'classic_room' => 'Classic Room',
+                    'family_room' => 'Family Room',
+                    'luxury_room' => 'Luxury Room',
+                    'superior_room' => 'Superior Room',
+                    'deluxe_room' => 'Deluxe Room',
+                ])->label('Label'),
             ]);
     }
     public static function table(Table $table): Table
@@ -35,9 +45,7 @@ class RoomcategoryResource extends Resource
             ->columns([
                 TextColumn::make('id'),
                 TextColumn::make('label'),
-                TextColumn::make('created_at')->date(),
-                TextColumn::make('updated_at')->date(),
-            ])
+                          ])
             ->filters([
                 //
             ])

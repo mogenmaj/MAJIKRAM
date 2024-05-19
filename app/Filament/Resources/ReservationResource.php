@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Filament\Resources;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
 use App\Filament\Resources\ReservationResource\Pages;
@@ -29,8 +30,7 @@ class ReservationResource extends Resource
             ->schema([
                 DatePicker::make('start_date')->native(false),
                 DatePicker::make('end_date')->native(false),
-                //
-            ]);
+                    ]);
     }
 
     public static function table(Table $table): Table
@@ -41,8 +41,6 @@ class ReservationResource extends Resource
                 TextColumn::make('id'), 
                 TextColumn::make('start_date')->date()->searchable()->toggleable()->sortable(),
                 TextColumn::make('end_date')->date()->searchable()->toggleable()->sortable(),
-                TextColumn::make('created_at')->date()->searchable()->toggleable()->sortable(),
-                TextColumn::make('updated_at')->date()->searchable()->toggleable()->sortable(),
                                ])
             ->filters([
                 //

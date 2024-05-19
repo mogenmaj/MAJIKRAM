@@ -1,10 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoomController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [RoomController::class, 'index'])->name('index');
 
 Route::get('about', function (Request $request) {
     return view('about');
@@ -26,7 +25,9 @@ Route::get('blog', function (Request $request) {
     return view('blog');
 })->name('blog');
 
-Route::get('index', function (Request $request) {
-    return view('index');
-})->name('index');
+Route::get('room', function (Request $request) {
+    return view('room');
+})->name('room-single');
 
+
+Route::post('search', [RoomController::class, 'search'])->name('search');

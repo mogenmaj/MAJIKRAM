@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Filament\Resources;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
 use App\Filament\Resources\RoomResource\Pages;
@@ -27,7 +28,12 @@ class RoomResource extends Resource
     {
         return $form
             ->schema([
-              ]);
+                TextInput::make('room_number')->required()->label('Room Number'),
+                TextInput::make('floor_number')->required()->label(' Floor Number'),
+                TextInput::make('price')->required()->label('Price'),
+                TextInput::make('category_id')->required()->label('Category id'),
+
+                           ]);
     }
 
     public static function table(Table $table): Table
