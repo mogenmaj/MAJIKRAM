@@ -11,18 +11,20 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reservations', function (Blueprint $table) {
-            $table->id();
-            $table->date('start_date')->nullable();
-            $table->date('end_date')->nullable();
-            $table->timestamps();
+        Schema::table('invoices', function (Blueprint $table) {
+            $table->foreignId('client_id')->constrained('clients')->cascadeOnDelete();
+            $table->foreignId('reservation_id')->constrained('reservations')->cascadeOnDelete();
+
         });
     }
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('reservations');
+        Schema::table('invoices', function (Blueprint $table) {
+            //
+        });
     }
 };

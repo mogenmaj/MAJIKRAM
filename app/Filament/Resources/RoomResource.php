@@ -4,6 +4,7 @@ namespace App\Filament\Resources;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\Select;
 use App\Filament\Resources\RoomResource\Pages;
 use App\Filament\Resources\RoomResource\RelationManagers;
 use App\Models\Room;
@@ -31,9 +32,12 @@ class RoomResource extends Resource
                 TextInput::make('room_number')->required()->label('Room Number'),
                 TextInput::make('floor_number')->required()->label(' Floor Number'),
                 TextInput::make('price')->required()->label('Price'),
-                TextInput::make('category_id')->required()->label('Category id'),
+                Select::make('category_id')
+                ->relationship('roomcategory','label')
+                ->label('category')
+                ->required(),
 
-                           ]);
+                 ]);
     }
 
     public static function table(Table $table): Table

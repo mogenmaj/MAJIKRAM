@@ -26,8 +26,9 @@ Route::get('blog', function (Request $request) {
 })->name('blog');
 
 Route::get('room', function (Request $request) {
-    return view('room');
-})->name('room-single');
+    return view('single-room');
+})->name('single-room');
+
 
 
 Route::post('search', [RoomController::class, 'search'])->name('search');

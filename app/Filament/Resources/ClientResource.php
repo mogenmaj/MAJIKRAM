@@ -30,7 +30,7 @@ class ClientResource extends Resource
             ->schema([
                 TextInput::make('first_name')->required()->label('First Name'),
                 TextInput::make('last_name')->required()->label('Last Name'),
-                TextInput::make('birth_date')->required()->label('Date of Birth'),
+                DatePicker::make('birth_date')->required()->label('Date of Birth'),
                 TextInput::make('address')->required()->label('Address'),
                 TextInput::make('country')->required()->label('Country'),
                 TextInput::make('city')->required()->label('City'),

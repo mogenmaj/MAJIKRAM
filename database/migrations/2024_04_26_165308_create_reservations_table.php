@@ -11,21 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('rooms', function (Blueprint $table) {
+        Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            $table->integer('room_number');
-            $table->integer('floor_number');
-            $table->foreignId('category_id')->constrained('room_categories')->cascadeOnDelete();
-            $table->float('price');
+            $table->foreignId('room_id')->constrained('rooms')->cascadeOnDelete();
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
             $table->timestamps();
-            });
+        });
     }
-
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('rooms');
+        Schema::dropIfExists('reservations');
     }
 };
