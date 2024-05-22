@@ -13,9 +13,9 @@ Route::get('contact', function (Request $request) {
     return view('contact');
 })->name('contact');
 
-Route::get('rooms', function (Request $request) {
-    return view('rooms');
-})->name('rooms');
+
+Route::get('rooms', [RoomController::class, 'all_rooms'])->name('rooms');
+
 
 Route::get('restaurant', function (Request $request) {
     return view('restaurant');
@@ -26,9 +26,8 @@ Route::get('blog', function (Request $request) {
 })->name('blog');
 
 Route::get('room', function (Request $request) {
-    return view('single-room');
-})->name('single-room');
-
+    return view('room');
+})->name('room-single');
 
 
 Route::post('search', [RoomController::class, 'search'])->name('search');
