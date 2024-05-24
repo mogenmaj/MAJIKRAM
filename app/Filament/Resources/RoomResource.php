@@ -24,7 +24,7 @@ class RoomResource extends Resource
         return __('room');
 }
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
+    protected static ?string $navigationGroup= 'System Management';
     public static function form(Form $form): Form
     {
         return $form
@@ -33,7 +33,7 @@ class RoomResource extends Resource
                 TextInput::make('floor_number')->required()->label(' Floor Number'),
                 TextInput::make('price')->required()->label('Price'),
                 Select::make('category_id')
-                ->relationship('roomcategory','label')
+                ->relationship('category','label')
                 ->label('category')
                 ->required(),
 

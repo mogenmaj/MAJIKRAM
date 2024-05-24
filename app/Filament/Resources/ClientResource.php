@@ -76,7 +76,7 @@ class ClientResource extends Resource
                 ]),
             ]);
     }
-
+protected static ?string $navigationGroup= 'System Management';
     public static function getRelations(): array
     {
         return [

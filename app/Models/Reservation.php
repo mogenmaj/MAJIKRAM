@@ -30,5 +30,9 @@ class Reservation extends Model
     {
         return $this->belongsTo(Invoice::class);
     }
+
+    public function getFormattedNameAttribute(): string  {
+        return $this->client->last_name .' ' . $this->start_date;
+    }
 }
 

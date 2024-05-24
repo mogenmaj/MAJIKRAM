@@ -25,6 +25,8 @@ class InvoiceResource extends Resource
     {
         return __('invoice');
     }
+    protected static ?string $navigationGroup= 'System Management';
+
     protected static ?string $navigationIcon = 'heroicon-o-clipboard-document-list';
     public static function form(Form $form): Form
     {
@@ -32,7 +34,7 @@ class InvoiceResource extends Resource
             ->schema([
                 TextInput::make('amount')->required()->numeric()->suffix('MAD'),
                                 Forms\Components\ToggleButtons::make('payment_type')->inline()->options(PaymentType::class),
-                                Select::make('reservation_ids')
+                                Select::make('reservation_id')
                                 ->label('reservation')
                                 ->relationship('reservation','start_date'), 
                             ]);

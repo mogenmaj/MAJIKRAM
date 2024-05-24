@@ -25,6 +25,7 @@ class ReservationResource extends Resource
     {
         return __('reservation');
     }
+    protected static ?string $navigationGroup= 'System Management';
 
     protected static ?string $navigationIcon = 'heroicon-o-pencil-square';
     public static function form(Form $form): Form
