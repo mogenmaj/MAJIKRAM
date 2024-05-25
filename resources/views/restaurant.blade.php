@@ -30,11 +30,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url(images/menu-1.jpg);"></div>
+                        <div class="img order-md-last" style="background-image: url(images/food1.png);"></div>
                         <div class="desc pr-3 text-md-right">
                             <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Crab with Onion</span></h3>
-                                <span class="price price-left">$20.00</span>
+                                <h3 class="order-md-last heading-left"><span>Couscous</span></h3>
+                                <span class="price price-left">85 DH</span>
                             </div>
                             <div class="d-block">
                                 <p>A small river named Duden flows by their place and supplies</p>
