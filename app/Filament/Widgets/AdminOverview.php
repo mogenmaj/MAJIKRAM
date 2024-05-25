@@ -19,7 +19,7 @@ class AdminOverview extends BaseWidget
             ->description('All clients from the database')
             ->descriptionIcon('heroicon-m-arrow-trending-down')
             ->color('danger'),
-        Stat::make('Reservations', '3:12')
+        Stat::make('Reservations', '3')
             ->description('All reservations from the database')
             ->descriptionIcon('heroicon-m-arrow-trending-up')
             ->color('success'),

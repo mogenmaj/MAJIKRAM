@@ -4,6 +4,9 @@ namespace App\Filament\Resources;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Multiselect;
+
 use App\Filament\Resources\ReservationResource\Pages;
 use App\Filament\Resources\ReservationResource\RelationManagers;
 use App\Models\Reservation;
@@ -22,12 +25,20 @@ class ReservationResource extends Resource
     {
         return __('reservation');
     }
+    protected static ?string $navigationGroup= 'System Management';
 
     protected static ?string $navigationIcon = 'heroicon-o-pencil-square';
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
+                Select::make('client_id')
+                ->label('client')
+                ->relationship('client','first_name')
+                ->required(),
+                Multiselect::make('room_ids')
+                ->label('rooms')
+                ->relationship('rooms','room_number'),
                 DatePicker::make('start_date')->native(false),
                 DatePicker::make('end_date')->native(false),
                     ]);
@@ -38,7 +49,8 @@ class ReservationResource extends Resource
 
         return $table
             ->columns([
-                TextColumn::make('id'), 
+                TextColumn::make('id'),
+                TextColumn::make('Client.first_name')->label('client') ,
                 TextColumn::make('start_date')->date()->searchable()->toggleable()->sortable(),
                 TextColumn::make('end_date')->date()->searchable()->toggleable()->sortable(),
                                ])

@@ -11,18 +11,17 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('reservations', function (Blueprint $table) {
-            $table->id();
-            $table->date('start_date')->nullable();
-            $table->date('end_date')->nullable();
-            $table->timestamps();
+        Schema::table('invoices', function (Blueprint $table) {
+            $table->dropForeign(['client_id']);
+            $table->dropColumn('client_id');
         });
     }
+
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        Schema::dropIfExists('reservations');
+        //
     }
 };

@@ -13,9 +13,9 @@ Route::get('contact', function (Request $request) {
     return view('contact');
 })->name('contact');
 
-Route::get('rooms', function (Request $request) {
-    return view('rooms');
-})->name('rooms');
+
+Route::get('rooms', [RoomController::class, 'all_rooms'])->name('rooms');
+
 
 Route::get('restaurant', function (Request $request) {
     return view('restaurant');

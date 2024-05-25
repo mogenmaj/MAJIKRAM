@@ -25,7 +25,7 @@ class ReceptionistResource extends Resource
     {
         return __('receptionist');
     }
-
+    protected static ?string $navigationGroup= 'Employee Management';
     protected static ?string $navigationIcon = 'heroicon-o-users';
     public static function form(Form $form): Form
     {

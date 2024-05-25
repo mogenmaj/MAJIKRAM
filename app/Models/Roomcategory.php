@@ -8,8 +8,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class RoomCategory extends Model
 {
-    use HasFactory;
+    use HasFactory; 
     protected $fillable=["label"];
+    
     public function room(): HasMany
     {
         return $this->hasMany(Room::class);

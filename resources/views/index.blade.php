@@ -47,14 +47,14 @@
                 <div class="col-lg-12 pr-1 aside-stretch">
 
                     <form method="POST" action={{ route('search') }} class="booking-form">
-                      @csrf
+                        @csrf
                         <div class="row">
                             <div class="col-md d-flex py-md-4">
                                 <div class="form-group align-self-stretch d-flex align-items-end">
                                     <div class="wrap bg-white align-self-stretch py-3 px-4">
                                         <label for="#">Check-in Date</label>
-                                        <input type="text" class="form-control checkin_date"
-                                            placeholder="Check-in date" name="start_date" />
+                                        <input type="text" class="form-control checkin_date" placeholder="Check-in date"
+                                            name="start_date" />
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@
                                     <div class="wrap bg-white align-self-stretch py-3 px-4">
                                         <label for="#">Check-out Date</label>
                                         <input type="text" class="form-control checkout_date"
-                                            placeholder="Check-out date" name="end_date"/>
+                                            placeholder="Check-out date" name="end_date" />
                                     </div>
                                 </div>
                             </div>
@@ -86,15 +86,14 @@
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div class="col-md d-flex">
                                 <div class="form-group d-flex align-self-stretch">
-                                    <button
-                                        type="submit"
+                                    <button type="submit"
                                         class="btn btn-black py-5 py-md-3 px-4 align-self-stretch d-block"><span>Check
                                             Availability
                                             <small>Best Price Guaranteed!</small></span>
-                                      </button>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -891,76 +890,4 @@
         </div>
     </section>
 
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">MAJIKROOM</h2>
-                        <p>
-                            MAJIKROOM Hotel is committed to providing an exceptional experience for its guests, blending
-                            comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a
-                            pleasant stay. Located in the heart of the city, MAJIKROOM offers easy access to local
-                            attractions. Book now for an unforgettable experience.
-                        </p>
-                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                            <li class="ftco-animate">
-                                <a href="#"><span class="icon-twitter"></span></a>
-                            </li>
-                            <li class="ftco-animate">
-                                <a href="#"><span class="icon-facebook"></span></a>
-                            </li>
-                            <li class="ftco-animate">
-                                <a href="#"><span class="icon-instagram"></span></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4 ml-md-5">
-                        <h2 class="ftco-heading-2">Useful Links</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Blog</a></li>
-                            <li><a href="#" class="py-2 d-block">Rooms</a></li>
-                            <li><a href="#" class="py-2 d-block">Amenities</a></li>
-                            <li><a href="#" class="py-2 d-block">Gift Card</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Privacy</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-2 d-block">Career</a></li>
-                            <li><a href="#" class="py-2 d-block">About Us</a></li>
-                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
-                            <li><a href="#" class="py-2 d-block">Services</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="ftco-footer-widget mb-4">
-                        <h2 class="ftco-heading-2">Have a Questions?</h2>
-                        <div class="block-23 mb-3">
-                            <ul>
-                                <li>
-                                    <span class="icon icon-map-marker"></span><span class="text"> 203 Avenue Hassan II,
-                                        Kénitra, Maroc</span>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="icon icon-phone"></span><span class="text">+212 651
-                                            53 69 25</span></a>
-                                </li>
-                                <li>
-                                    <a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">info@majikroom.com</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row"></div>
-        </div>
-    </footer>
 @endsection
