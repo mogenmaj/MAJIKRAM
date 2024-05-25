@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('country');
             $table->string('city');
             $table->string('status')->nullable();
-            $table->integer('phone');
+            $table->string('phone');
             $table->string('nationality');
             $table->string('carte_number')->unique();
             $table->timestamps();
