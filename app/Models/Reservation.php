@@ -20,7 +20,7 @@ class Reservation extends Model
         return $this->belongsTo(Client::class);
     }
 
-    public function rooms(): BelongsToMany
+    public function room(): BelongsToMany
     {
         return $this->belongsToMany(Room::class);
     }
