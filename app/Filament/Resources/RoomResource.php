@@ -30,7 +30,7 @@ class RoomResource extends Resource
         return $form
             ->schema([
                 TextInput::make('room_number')->required()->label('Room Number'),
-                TextInput::make('floor_number')->required()->label(' Floor Number'),
+                Seelct::make ('floor_number')->required()->label(' Floor Number'),
                 TextInput::make('price')->required()->label('Price'),
                 Select::make('category_id')
                 ->relationship('category','label')
@@ -47,7 +47,7 @@ class RoomResource extends Resource
                 TextColumn::make('id'),
                 TextColumn::make('room_number'),
                 TextColumn::make('floor_number'),
-                TextColumn::make('category_id'),
+                TextColumn::make('category.label'),
                 TextColumn::make('price'),
                 TextColumn::make('created_at')->date(),
                 TextColumn::make('updated_at')->date(),
