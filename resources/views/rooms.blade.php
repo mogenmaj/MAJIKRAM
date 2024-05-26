@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <div class="hero-wrap" style="background-image: url(images/bg_1.jpg);">
+    <div class="hero-wrap" style="background-image: url(images/roombackground.png);">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
@@ -13,7 +13,7 @@
                         <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home</a></span>
                             <span>About</span>
                         </p>
-                        <h1 class="mb-4 bread">Rooms</h1>
+                        <h1 class="mb-4 bread">"Experience comfort and luxury in our rooms"</h1>
                     </div>
                 </div>
             </div>

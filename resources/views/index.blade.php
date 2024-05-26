@@ -637,49 +637,48 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="pricing-entry d-flex ftco-animate">
-                    <div class="img order-md-last" style="background-image: url(images/menu-1.jpg)"></div>
+                    <div class="img order-md-last" style="background-image: url(images/food1.png)"></div>
                     <div class="desc pr-3 text-md-right">
                         <div class="d-md-flex text align-items-center">
                             <h3 class="order-md-last heading-left">
-                                <span>Grilled Crab with Onion</span>
+                                <span>Couscous with tfaya and legumes </span>
                             </h3>
-                            <span class="price price-left">$20.00</span>
+                            <span class="price price-left">85 DH</span>
                         </div>
                         <div class="d-block">
                             <p>
-                                A small river named Duden flows by their place and supplies
+                              Flavorful couscous with sweet tfaya sauce and veggies                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pricing-entry d-flex ftco-animate">
+                    <div class="img order-md-last" style="background-image: url(images/food2.png)"></div>
+                    <div class="desc pr-3 text-md-right">
+                        <div class="d-md-flex text align-items-center">
+                            <h3 class="order-md-last heading-left">
+                                <span>Sweet bastilla with chicken</span>
+                            </h3>
+                            <span class="price price-left">170 DH</span>
+                        </div>
+                        <div class="d-block">
+                            <p>
+                              Moroccan delicacy: Chicken, almonds, and spices in delicate pastry, topped with sugar and cinnamon
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="pricing-entry d-flex ftco-animate">
-                    <div class="img order-md-last" style="background-image: url(images/menu-2.jpg)"></div>
+                    <div class="img order-md-last" style="background-image: url(images/food3.png)"></div>
                     <div class="desc pr-3 text-md-right">
                         <div class="d-md-flex text align-items-center">
                             <h3 class="order-md-last heading-left">
-                                <span>Grilled Beef with potatoes</span>
+                                <span>Moroccan chicken tagine with preserved lemons</span>
                             </h3>
-                            <span class="price price-left">$29.00</span>
+                            <span class="price price-left">150 DH</span>
                         </div>
                         <div class="d-block">
                             <p>
-                                A small river named Duden flows by their place and supplies
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="pricing-entry d-flex ftco-animate">
-                    <div class="img order-md-last" style="background-image: url(images/menu-3.jpg)"></div>
-                    <div class="desc pr-3 text-md-right">
-                        <div class="d-md-flex text align-items-center">
-                            <h3 class="order-md-last heading-left">
-                                <span>Grilled Beef with potatoes</span>
-                            </h3>
-                            <span class="price price-left">$20.00</span>
-                        </div>
-                        <div class="d-block">
-                            <p>
-                                A small river named Duden flows by their place and supplies
+                              A flavorful dish showcasing tender chicken cooked with aromatic spices and preserved lemons
                             </p>
                         </div>
                     </div>
@@ -691,11 +690,11 @@
                             <h3 class="order-md-last heading-left">
                                 <span>Grilled Beef with potatoes</span>
                             </h3>
-                            <span class="price price-left">$20.00</span>
+                            <span class="price price-left">230 DH</span>
                         </div>
                         <div class="d-block">
                             <p>
-                                A small river named Duden flows by their place and supplies
+                              Tender beef paired with seasoned potatoes
                             </p>
                         </div>
                     </div>
@@ -704,57 +703,57 @@
 
             <div class="col-md-6">
                 <div class="pricing-entry d-flex ftco-animate">
-                    <div class="img" style="background-image: url(images/menu-5.jpg)"></div>
+                    <div class="img" style="background-image: url(images/food4.png)"></div>
                     <div class="desc pl-3">
                         <div class="d-md-flex text align-items-center">
                             <h3><span>Grilled Beef with potatoes</span></h3>
-                            <span class="price">$49.91</span>
+                            <span class="price">75 DH</span>
                         </div>
                         <div class="d-block">
                             <p>
-                                A small river named Duden flows by their place and supplies
+                              Moroccan roasted eggplant dip with tomatoes and spices
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="pricing-entry d-flex ftco-animate">
-                    <div class="img" style="background-image: url(images/menu-6.jpg)"></div>
+                    <div class="img" style="background-image: url(images/food5.png)"></div>
                     <div class="desc pl-3">
                         <div class="d-md-flex text align-items-center">
-                            <h3><span>Ultimate Overload</span></h3>
-                            <span class="price">$20.00</span>
+                            <h3><span>Harira</span></h3>
+                            <span class="price">40 DH</span>
                         </div>
                         <div class="d-block">
                             <p>
-                                A small river named Duden flows by their place and supplies
+                              A hearty soup made with tomatoes, lentils, chickpeas, and spices, often enjoyed during Ramadan or as a comforting meal
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="pricing-entry d-flex ftco-animate">
-                    <div class="img" style="background-image: url(images/menu-7.jpg)"></div>
+                    <div class="img" style="background-image: url(images/food6.png)"></div>
                     <div class="desc pl-3">
                         <div class="d-md-flex text align-items-center">
-                            <h3><span>Grilled Beef with potatoes</span></h3>
-                            <span class="price">$20.00</span>
+                            <h3><span>Moroccan Mint Tea</span></h3>
+                            <span class="price">55 DH</span>
                         </div>
                         <div class="d-block">
                             <p>
-                                A small river named Duden flows by their place and supplies
+                              Refreshing green tea infused with fresh mint leaves and sweetened with sugar, often enhanced with hints of orange blossom water
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="pricing-entry d-flex ftco-animate">
-                    <div class="img" style="background-image: url(images/menu-8.jpg)"></div>
+                    <div class="img" style="background-image: url(images/food7.png)"></div>
                     <div class="desc pl-3">
                         <div class="d-md-flex text align-items-center">
-                            <h3><span>Ham &amp; Pineapple</span></h3>
-                            <span class="price">$20.00</span>
+                            <h3><span>Various Pizzas</span></h3>
+                            <span class="price">135 DH</span>
                         </div>
                         <div class="d-block">
                             <p>
-                                A small river named Duden flows by their place and supplies
+                              Enjoy a variety of pizzas with different toppings, from classic pepperoni to vegetarian options, freshly prepared and baked to perfection
                             </p>
                         </div>
                     </div>
@@ -775,7 +774,7 @@
             <div class="row d-flex">
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="" class="block-20" style="background-image: url('images/image_1.jpg')">
+                        <a href="" class="block-20" style="background-image: url('images/blog6.png')">
                         </a>
                         <div class="text mt-3 text-center">
                             <div class="meta mb-2">
@@ -786,8 +785,7 @@
                                 </div>
                             </div>
                             <h3 class="heading">
-                                <a href="#">Even the all-powerful Pointing has no control about the
-                                    blind texts</a>
+                                <a href="#">Experience the captivating rhythms of Gnawa music at our hotel</a>
                             </h3>
                             <p><a href="#" class="btn-custom">Read more</a></p>
                         </div>
@@ -795,7 +793,7 @@
                 </div>
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="" class="block-20" style="background-image: url('images/image_2.jpg')">
+                        <a href="" class="block-20" style="background-image: url('images/blog1.png')">
                         </a>
                         <div class="text mt-3 text-center">
                             <div class="meta mb-2">
@@ -806,8 +804,7 @@
                                 </div>
                             </div>
                             <h3 class="heading">
-                                <a href="#">Even the all-powerful Pointing has no control about the
-                                    blind texts</a>
+                                <a href="#">An area styled in Moroccan fashion, adorned with luxurious cushions, intricate rugs, and ornate decorations, offers a warm and welcoming space for relaxation and socializing</a>
                             </h3>
                             <p><a href="#" class="btn-custom">Read more</a></p>
                         </div>
@@ -815,7 +812,7 @@
                 </div>
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry align-self-stretch">
-                        <a href="" class="block-20" style="background-image: url('images/image_3.jpg')">
+                        <a href="" class="block-20" style="background-image: url('images/blog3.png')">
                         </a>
                         <div class="text mt-3 text-center">
                             <div class="meta mb-2">
@@ -826,8 +823,7 @@
                                 </div>
                             </div>
                             <h3 class="heading">
-                                <a href="#">Even the all-powerful Pointing has no control about the
-                                    blind texts</a>
+                                <a href="#">A cozy oasis amidst Moroccan walls</a>
                             </h3>
                             <p><a href="#" class="btn-custom">Read more</a></p>
                         </div>
@@ -848,7 +844,7 @@
             <div class="row no-gutters">
                 <div class="col-sm-12 col-md ftco-animate">
                     <a href="images/insta-1.jpg" class="insta-img image-popup"
-                        style="background-image: url(images/insta-1.jpg)">
+                        style="background-image: url(images/insta1.png)">
                         <div class="icon d-flex justify-content-center">
                             <span class="icon-instagram align-self-center"></span>
                         </div>
@@ -856,7 +852,7 @@
                 </div>
                 <div class="col-sm-12 col-md ftco-animate">
                     <a href="images/insta-2.jpg" class="insta-img image-popup"
-                        style="background-image: url(images/insta-2.jpg)">
+                        style="background-image: url(images/insta2.png)">
                         <div class="icon d-flex justify-content-center">
                             <span class="icon-instagram align-self-center"></span>
                         </div>
@@ -864,7 +860,7 @@
                 </div>
                 <div class="col-sm-12 col-md ftco-animate">
                     <a href="images/insta-3.jpg" class="insta-img image-popup"
-                        style="background-image: url(images/insta-3.jpg)">
+                        style="background-image: url(images/insta3.png)">
                         <div class="icon d-flex justify-content-center">
                             <span class="icon-instagram align-self-center"></span>
                         </div>
@@ -872,7 +868,7 @@
                 </div>
                 <div class="col-sm-12 col-md ftco-animate">
                     <a href="images/insta-4.jpg" class="insta-img image-popup"
-                        style="background-image: url(images/insta-4.jpg)">
+                        style="background-image: url(images/insta4.png)">
                         <div class="icon d-flex justify-content-center">
                             <span class="icon-instagram align-self-center"></span>
                         </div>
@@ -880,7 +876,7 @@
                 </div>
                 <div class="col-sm-12 col-md ftco-animate">
                     <a href="images/insta-5.jpg" class="insta-img image-popup"
-                        style="background-image: url(images/insta-5.jpg)">
+                        style="background-image: url(images/insta5.png)">
                         <div class="icon d-flex justify-content-center">
                             <span class="icon-instagram align-self-center"></span>
                         </div>

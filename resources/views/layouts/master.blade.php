@@ -143,9 +143,7 @@
                         <div class="block-23 mb-3">
                             <ul>
                                 <li>
-                                    <span class="icon icon-map-marker"></span><span class="text"> 203 Avenue Hassan
-                                        II,
-                                        Kénitra, Maroc</span>
+                                    <span class="icon icon-map-marker"></span><span class="text"> Km 4, route d'Amizmiz Marrakech, Maroc</span>
                                 </li>
                                 <li>
                                     <a href="#"><span class="icon icon-phone"></span><span class="text">+212

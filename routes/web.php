@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoomController;
 
+Route::get('generate-pdf', [App\Http\Controllers\PdfController::class, 'generatePdf']);
+
 Route::get('/', [RoomController::class, 'index'])->name('index');
 
 Route::get('about', function (Request $request) {

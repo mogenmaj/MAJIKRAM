@@ -29,14 +29,14 @@ About
 					<div class="col-md-7 py-5 wrap-about pb-md-5 ftco-animate">
 	          <div class="heading-section heading-section-wo-line pt-md-5 mb-5">
 	          	<div class="ml-md-0">
-		          	<span class="subheading">Welcome to MAJIKRAM Hotel</span>
+		          	<span class="subheading">Welcome to MAJIKROOM Hotel</span>
 		            <h2 class="mb-4">Welcome To Our Hotel</h2>
 	            </div>
 	          </div>
 	          <div class="pb-md-5">
-		MAJIKRAM has been providing exceptional hotel experiences since 2020. Located in the heart of Kenitra, our establishment combines world-class service with a warm and welcoming atmosphere. Our dedicated team works tirelessly to anticipate and meet the needs of our guests, offering personalized service at every step of their stay.
+		MAJIKROOM has been providing exceptional hotel experiences since 2020. Located in the heart of Marrakesh, our establishment combines world-class service with a warm and welcoming atmosphere. Our dedicated team works tirelessly to anticipate and meet the needs of our guests, offering personalized service at every step of their stay.
 
-                                We take pride in our commitment to sustainability and social responsibility, continuously seeking ways to minimize our environmental impact and positively contribute to our community-MAJIKRAM - your home away from home.</p>
+                                We take pride in our commitment to sustainability and social responsibility, continuously seeking ways to minimize our environmental impact and positively contribute to our community-MAJIKROOM - your home away from home.</p>
 							<ul class="ftco-social d-flex">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -52,7 +52,7 @@ About
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">MAJIKRAM Hotel</span>
+          	<span class="subheading">MAJIKROOM Hotel</span>
             <h2 class="mb-4">A New Vision of Luxury Hotel</h2>
           </div>
         </div>  
@@ -325,20 +325,16 @@ About
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text"> 203 Avenue Hassan II, Kénitra, Maroc</span></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Km 4, route d'Amizmiz
+                    Marrakech, Maroc</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +212 651 53 69 25 </span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@majikram.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@majikroom.com</span></a></li>
 	              </ul>
 	            </div> 
             </div> 
           </div> 
         </div> 
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
+       
         </div> 
         </div> 
     </footer>

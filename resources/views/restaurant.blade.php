@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');">
+    <div class="hero-wrap" style="background-image: url('images/restauu.png');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text d-flex align-itemd-end justify-content-center">
@@ -12,7 +12,7 @@
                     <div class="text">
                         <p class="breadcrumbs mb-2"><span class="mr-2"><a href="{{ route('index') }}">Home</a></span>
                             <span>Restaurant</span></p>
-                        <h1 class="mb-4 bread">Restaurant</h1>
+                        <h1 class="mb-4 bread">"Experience a unique dining delight"</h1>
                     </div>
                 </div>
             </div>
@@ -24,44 +24,45 @@
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 heading-section text-center ftco-animate">
                     <span class="subheading">Restaurant</span>
-                    <h2>Restaurant</h2>
+                    <h2>The ideal balance between an exotic venue and a perfect cooking
+                    </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url(images/menu-1.jpg);"></div>
+                        <div class="img order-md-last" style="background-image: url(images/food1.png);"></div>
                         <div class="desc pr-3 text-md-right">
                             <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Crab with Onion</span></h3>
-                                <span class="price price-left">$20.00</span>
+                                <h3 class="order-md-last heading-left"><span>Couscous with tfaya and legumes</span></h3>
+                                <span class="price price-left">85 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p> Flavorful couscous with sweet tfaya sauce and veggies</p>
                             </div>
                         </div>
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url(images/menu-2.jpg);"></div>
+                        <div class="img order-md-last" style="background-image: url(images/food2.png);"></div>
                         <div class="desc pr-3 text-md-right">
                             <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$29.00</span>
+                                <h3 class="order-md-last heading-left"><span>Sweet bastilla with chicken</span></h3>
+                                <span class="price price-left">170 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p>Moroccan delicacy: Chicken, almonds, and spices in delicate pastry, topped with sugar and cinnamon</p>
                             </div>
                         </div>
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img order-md-last" style="background-image: url(images/menu-3.jpg);"></div>
+                        <div class="img order-md-last" style="background-image: url(images/food3.png);"></div>
                         <div class="desc pr-3 text-md-right">
                             <div class="d-md-flex text align-items-center">
-                                <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$20.00</span>
+                                <h3 class="order-md-last heading-left"><span>Moroccan chicken tagine with preserved lemons</span></h3>
+                                <span class="price price-left">150 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p>A flavorful dish showcasing tender chicken cooked with aromatic spices and preserved lemons</p>
                             </div>
                         </div>
                     </div>
@@ -70,10 +71,10 @@
                         <div class="desc pr-3 text-md-right">
                             <div class="d-md-flex text align-items-center">
                                 <h3 class="order-md-last heading-left"><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price price-left">$20.00</span>
+                                <span class="price price-left">230 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p> Tender beef paired with seasoned potatoes</p>
                             </div>
                         </div>
                     </div>
@@ -81,50 +82,50 @@
 
                 <div class="col-md-6">
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url(images/menu-5.jpg);"></div>
+                        <div class="img" style="background-image: url(images/food4.png);"></div>
                         <div class="desc pl-3">
                             <div class="d-md-flex text align-items-center">
-                                <h3><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price">$49.91</span>
+                                <h3><span>Zaalouk</span></h3>
+                                <span class="price">75 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p>Moroccan roasted eggplant dip with tomatoes and spices</p>
                             </div>
                         </div>
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url(images/menu-6.jpg);"></div>
+                        <div class="img" style="background-image: url(images/food5.png);"></div>
                         <div class="desc pl-3">
                             <div class="d-md-flex text align-items-center">
-                                <h3><span>Ultimate Overload</span></h3>
-                                <span class="price">$20.00</span>
+                                <h3><span>Harira</span></h3>
+                                <span class="price">40 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p>A hearty soup made with tomatoes, lentils, chickpeas, and spices, often enjoyed during Ramadan or as a comforting meal</p>
                             </div>
                         </div>
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url(images/menu-7.jpg);"></div>
+                        <div class="img" style="background-image: url(images/food6.png);"></div>
                         <div class="desc pl-3">
                             <div class="d-md-flex text align-items-center">
-                                <h3><span>Grilled Beef with potatoes</span></h3>
-                                <span class="price">$20.00</span>
+                                <h3><span>Moroccan Mint Tea</span></h3>
+                                <span class="price">55 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p>Refreshing green tea infused with fresh mint leaves and sweetened with sugar, often enhanced with hints of orange blossom water</p>
                             </div>
                         </div>
                     </div>
                     <div class="pricing-entry d-flex ftco-animate">
-                        <div class="img" style="background-image: url(images/menu-8.jpg);"></div>
+                        <div class="img" style="background-image: url(images/food7.png);"></div>
                         <div class="desc pl-3">
                             <div class="d-md-flex text align-items-center">
-                                <h3><span>Ham &amp; Pineapple</span></h3>
-                                <span class="price">$20.00</span>
+                                <h3><span>Various Pizzas </span></h3>
+                                <span class="price">135 DH</span>
                             </div>
                             <div class="d-block">
-                                <p>A small river named Duden flows by their place and supplies</p>
+                                <p>Enjoy a variety of pizzas with different toppings, from classic pepperoni to vegetarian options, freshly prepared and baked to perfection</p>
                             </div>
                         </div>
                     </div>
@@ -177,8 +178,8 @@
                         <h2 class="ftco-heading-2">Have a Questions?</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Avenue Hassan II,
-                                        Kénitra, Maroc</span></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Km 4, route d'Amizmiz
+                                    Marrakech, Maroc</span></li>
                                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+212 651
                                             53 69 25</span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
@@ -191,17 +192,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
 
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script> All rights reserved | This template is made with <i
-                            class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                            target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/"
-                            target="_blank">Themeslab</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                </div>
+                                  </div>
             </div>
         </div>
     </footer>

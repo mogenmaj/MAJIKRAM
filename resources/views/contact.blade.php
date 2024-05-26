@@ -27,7 +27,8 @@ Contact
           <div class="w-100"></div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
-	            <p><span>Address:</span>  Avenue Hassan II, Kénitra, Maroc</p>
+	            <p><span>Address:</span>  >Km 4, route d'Amizmiz
+                Marrakech, Maroc</p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
@@ -37,12 +38,12 @@ Contact
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
-	            <p><span>Email:</span> <a href="mailto:info@yoursite.coMAJIKROOM.com</a></p>
+	            <p><span>Email:</span> <a href="mailto:info@majikroom.com</a></p>
 	          </div>
           </div>
           <div class="col-md-3 d-flex">
           	<div class="info bg-white p-4">
-	            <p><span>Website</span> <a href="#">yoursite.com</a></p>
+	            <p><a href="#">info@majikroom.com</a></p>
 	          </div>
           </div>
         </div>
@@ -81,7 +82,7 @@ Contact
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">MAJIKROOM</h2>
-              <p>MAJIKROOM Hotel is committed to providing an exceptional experience for its guests, blending comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a pleasant stay. Located in the heart of the city, MAJIKROOM offers easy access to local attractions. Book now for an unforgettable experience.</p>
+              <p>MAJIKROOM Hotel is committed to providing an exceptional experience for its guests, blending comfort, hospitality, and convenience. Our rooms are equipped with modern facilities to ensure a pleasant stay. Located in the heart of Marrakesh, MAJIKROOM offers easy access to local attractions. Book now for an unforgettable experience.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -116,7 +117,8 @@ Contact
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text"> 203 Avenue Hassan II, Kénitra, Maroc</span></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text" > Km 4, route d'Amizmiz
+                    Marrakech, Maroc</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> +212 651 53 69 25</span></a></li>
 	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text"> info@majikroom.com</span></a></li>
 	              </ul>
@@ -124,14 +126,7 @@ Contact
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>
+             </div>
       </div>
     </footer>
     @endsection

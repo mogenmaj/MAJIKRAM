@@ -37,7 +37,7 @@ Blog
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Enjoy the wave pool for a sensational ocean-like experience</a></h3>
+                <h3 class="heading"><a href="#">Experience the captivating rhythms of Gnawa music at our hotel</a></h3>
                 <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>
@@ -67,7 +67,7 @@ Blog
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#">Both the door and the hotel epitomize Moroccan beauty and hospitality</a></h3>
                 <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>
@@ -83,7 +83,7 @@ Blog
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#">A cozy oasis amidst Moroccan walls</a></h3>
                 <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>
@@ -98,7 +98,7 @@ Blog
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#">A large pool overlooking our hotel, a mesmerizing sight inviting relaxation and tranquility</a></h3>
                 <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>
@@ -113,7 +113,7 @@ Blog
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+                <h3 class="heading"><a href="#"></a>Let yourself be taken into the heart of Africa, in a unique place in Morocco</h3>
                 <p><a href="#" class="btn-custom">Read more</a></p>
               </div>
             </div>
@@ -178,21 +178,16 @@ Blog
             	<h2 class="ftco-heading-2">Have a Questions?</h2>
             	<div class="block-23 mb-3">
 	              <ul>
-	                <li><span class="icon icon-map-marker"></span><span class="text">203 Avenue Hassan II, Kénitra, Maroc</span></li>
+	                <li><span class="icon icon-map-marker"></span><span class="text">>Km 4, route d'Amizmiz
+                    Marrakech, Maroc</span></li>
 	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+212 651 53 69 25</span></a></li>
-	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@mAJIKROOM.com</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@majikroom.com</span></a></li>
 	              </ul>
 	            </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.Downloaded from <a href="https://themeslab.org/" target="_blank">Themeslab</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
+      
         </div>
       </div>
     </footer>
