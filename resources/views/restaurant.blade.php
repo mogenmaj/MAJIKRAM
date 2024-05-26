@@ -34,7 +34,11 @@
                         <div class="img order-md-last" style="background-image: url(images/food1.png);"></div>
                         <div class="desc pr-3 text-md-right">
                             <div class="d-md-flex text align-items-center">
+<<<<<<< HEAD
                                 <h3 class="order-md-last heading-left"><span>Couscous with tfaya and legumes</span></h3>
+=======
+                                <h3 class="order-md-last heading-left"><span>Couscous</span></h3>
+>>>>>>> ee545897cfa05acaa4dd67dcdabc5b4058e55ce4
                                 <span class="price price-left">85 DH</span>
                             </div>
                             <div class="d-block">
