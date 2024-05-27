@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RoomController;
+use App\Http\Controllers\PdfController;
 
-Route::get('generate-pdf', [App\Http\Controllers\PdfController::class, 'generatePdf']);
+Route::get('/generate-pdf', [PdfController::class, 'generatePdf']);
 
 Route::get('/', [RoomController::class, 'index'])->name('index');
 
