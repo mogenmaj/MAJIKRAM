@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PdfController;
+use App\Http\Controllers\RoomController;
+
 
 Route::get('/generate-pdf', [PdfController::class, 'generatePdf']);
 
