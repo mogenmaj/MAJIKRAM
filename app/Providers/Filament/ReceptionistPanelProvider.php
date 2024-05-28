@@ -25,6 +25,7 @@ class ReceptionistPanelProvider extends PanelProvider
         return $panel
             ->id('receptionist')
             ->path('receptionist')
+            ->profile(isSimple: false)
             ->colors([
                 'primary' => Color::Amber,
             ])

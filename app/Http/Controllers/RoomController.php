@@ -54,4 +54,18 @@ class RoomController extends Controller
 
         return view('rooms', compact('rooms', 'categories'));
     }
+
+    public function availableRooms(Request $request)
+    {
+        $startDate = $request->query('start_date');
+        $endDate = $request->query('end_date');
+                //dd($startDate);
+        $availableRooms = Room::whereDoesntHave('reservations', function ($query) use ($startDate, $endDate) {
+            $query->where(function ($query) use ($startDate, $endDate) {
+                $query->where('start_date', '<', $endDate)
+                      ->where('end_date', '>', $startDate);
+            });
+        })->get();
+        return response()->json($availableRooms->pluck('room_number', 'id'));
+    }
 }

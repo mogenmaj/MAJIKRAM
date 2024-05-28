@@ -40,6 +40,22 @@
 
         @stack('modals')
 
+        <script>
+            console.log('hello world');
+                const t = document.querySelector("#data\\.room_number")
+                t.addEventListener("change", function(){
+                    if(t.value < 10){
+                    document.querySelector("#data\\.floor_number").value = 1;
+                    }
+                    if(t.value > 10){
+                        document.querySelector("#data\\.floor_number").value = 2;
+                    }
+                    if(t.value > 20){
+                        document.querySelector("#data\\.floor_number").value = 3;
+                    }
+                })
+               
+        </script>
         @livewireScripts
     </body>
 </html>

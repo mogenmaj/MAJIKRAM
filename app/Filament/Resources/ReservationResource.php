@@ -10,6 +10,8 @@ use Filament\Forms\Components\Multiselect;
 use App\Filament\Resources\ReservationResource\Pages;
 use App\Filament\Resources\ReservationResource\RelationManagers;
 use App\Models\Reservation;
+use App\Models\Room;
+
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -31,17 +33,43 @@ class ReservationResource extends Resource
     public static function form(Form $form): Form
     {
         return $form
-            ->schema([
-                Select::make('client_id')
-                ->label('client')
-                ->relationship('client','first_name')
+        ->schema([
+            Select::make('client_id')
+                ->label('Client')
+                ->relationship('client', 'first_name')
                 ->required(),
-                Multiselect::make('room_ids')
-                ->label('rooms')
-                ->relationship('rooms','room_number'),
-                DatePicker::make('start_date')->native(false),
-                DatePicker::make('end_date')->native(false),
-                    ]);
+            MultiSelect::make('rooms')
+                ->label('Rooms')
+                ->options(function (callable $get) {
+                    $startDate = $get('start_date');
+                    $endDate = $get('end_date');
+
+                    if ($startDate && $endDate) {
+                        // Fetch available rooms based on the selected date range
+                        $availableRooms = Room::whereDoesntHave('reservations', function ($query) use ($startDate, $endDate) {
+                            $query->where('start_date', '<', $endDate)
+                                  ->where('end_date', '>', $startDate);
+                        })->pluck('room_number', 'id');
+
+                     
+
+                        return $availableRooms;
+                    }
+
+                    return [];
+                })
+                ->required(),
+            DatePicker::make('start_date')
+                ->label('Start Date')
+                ->required()
+                ->live()
+                ->native(false),
+            DatePicker::make('end_date')
+                ->label('End Date')
+                ->required()
+                ->live()
+                ->native(false),
+        ]);
     }
 
     public static function table(Table $table): Table

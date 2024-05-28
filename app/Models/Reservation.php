@@ -21,7 +21,7 @@ class Reservation extends Model
         return $this->belongsTo(Client::class);
     }
 
-    public function room(): BelongsToMany
+    public function rooms(): BelongsToMany
     {
         return $this->belongsToMany(Room::class , 'reservation_room')->withTimestamps();
     }

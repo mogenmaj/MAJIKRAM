@@ -33,12 +33,28 @@ class RoomResource extends Resource
         return $form
         ->schema([
             TextInput::make('room_number')
-                ->required()
-                ->label('Room Number'),
-            TextInput::make('floor_number')
-                ->required()
-                ->label('Floor Number')
-                ->default(1), // Définir une valeur par défaut pour floor_number
+                    ->required()
+                    ->label('Numéro de chambre')
+                    ->reactive()
+                    ->afterStateUpdated(function (callable $set, $state) {
+                        if ($state < 10) {
+                            $floorNumber = 1;
+                        } elseif ($state > 10 && $state <= 20) {
+                            $floorNumber = 2;
+                        } elseif ($state > 20) {
+                            $floorNumber = 3;
+                        } else {
+                            $floorNumber = 1; // Par défaut, au cas où
+                        }
+                        $set('floor_number', $floorNumber);
+                    }),
+                
+                TextInput::make('floor_number')
+                    ->required()
+                    ->label('Numéro d\'étage')
+                    ->disabled()
+                    ->id('floor_number'), // Ajoutez un identifiant ici 
+                
             TextInput::make('price')
                 ->required()
                 ->label('Price'),

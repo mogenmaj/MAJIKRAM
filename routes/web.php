@@ -33,5 +33,6 @@ Route::get('room', function (Request $request) {
     return view('room');
 })->name('room-single');
 
+Route::get('/available-rooms', [RoomController::class, 'availableRooms'])->name('available-rooms');
 
 Route::post('search', [RoomController::class, 'search'])->name('search');
