@@ -15,7 +15,6 @@ class PdfController extends Controller
         $date = date('Y-m-d');
         $invoices = Invoice::all();
         $clients = Client::all();
-
         $pdf = Pdf::loadView('pdf_template', compact('title', 'date', 'invoices', 'clients'));
         return $pdf->download('invoice_report.pdf');
     }

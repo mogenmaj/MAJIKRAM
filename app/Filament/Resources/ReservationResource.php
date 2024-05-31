@@ -23,7 +23,13 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class ReservationResource extends Resource
 {
     protected static ?string $model = Reservation::class;
+    public static function getLabel(): string
+    
+    {
+        return __('reservation');
+    }
     public static function getNavigationLabel(): string
+    
     {
         return __('reservation');
     }

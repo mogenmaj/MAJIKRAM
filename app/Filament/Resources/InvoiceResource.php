@@ -1,26 +1,31 @@
 <?php
 
 namespace App\Filament\Resources;
-use App\Enums\PaymentType;
-use Filament\Forms\Components\DatePicker;
-use Filament\Tables\Columns\TextColumn;
-use App\Filament\Resources\InvoiceResource\Pages;
-use App\Filament\Resources\InvoiceResource\RelationManagers;
-use App\Models\Invoice;
 use Filament\Forms;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\Select;
-
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\Invoice;
+use Filament\Forms\Form;
+use App\Enums\PaymentType;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Forms\Components\Select;
+use Filament\Tables\Columns\TextColumn;
+
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\DatePicker;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\InvoiceResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Tables\Actions\Action;
+use App\Filament\Resources\InvoiceResource\RelationManagers;
 
 class InvoiceResource extends Resource
 {
     protected static ?string $model = Invoice::class;
+    public static function getLabel(): string
+    {
+        return __('invoice');
+    }
     public static function getNavigationLabel(): string
     {
         return __('invoice');
@@ -54,6 +59,16 @@ class InvoiceResource extends Resource
                 //
             ])
             ->actions([
+                Action::make('exportPDF')
+                    ->label('Export PDF')
+                    ->icon('heroicon-o-arrow-down-tray')
+                    ->action(function($record){
+                        $pdfPath = $record->path;
+                        $pdfFilename = basename($pdfPath);
+
+                        return response()->download(storage_path('app/' . $pdfPath), $pdfFilename);
+                                      }),
+                
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),               
                 Tables\Actions\ViewAction::make(),

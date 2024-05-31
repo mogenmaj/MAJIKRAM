@@ -2,6 +2,7 @@
 
 namespace App\Filament\Receptionist\Resources;
 use App\Enums\PaymentType;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
 use App\Filament\Receptionist\Resources\InvoiceResource\Pages;
@@ -29,7 +30,12 @@ class InvoiceResource extends Resource
     {
         return $form
             ->schema([
-                //
+                DatePicker::make('created_at')->native(false),
+                DatePicker::make('updated_at')->native(false),
+                TextInput::make('amount')->required()->label('Amount'),
+                TextInput::make('payment_type')->required()->label('Payment_type'),
+
+
             ]);
     }
 
@@ -47,13 +53,10 @@ class InvoiceResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),               
                 Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }
@@ -69,8 +72,6 @@ class InvoiceResource extends Resource
     {
         return [
             'index' => Pages\ListInvoices::route('/'),
-            'create' => Pages\CreateInvoice::route('/create'),
-            'edit' => Pages\EditInvoice::route('/{record}/edit'),
         ];
     }
 }

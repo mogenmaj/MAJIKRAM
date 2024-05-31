@@ -10,10 +10,5 @@ class ListRoomcategories extends ListRecords
 {
     protected static string $resource = RoomcategoryResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
+ 
 }

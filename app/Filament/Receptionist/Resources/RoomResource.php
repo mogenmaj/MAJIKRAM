@@ -26,7 +26,9 @@ class RoomResource extends Resource
     {
         return $form
             ->schema([
-                //
+                DatePicker::make('created_at')->native(false),
+                DatePicker::make('updated_at')->native(false),
+                
             ]);
     }
 
@@ -46,13 +48,11 @@ class RoomResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+               
                 Tables\Actions\ViewAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
     }

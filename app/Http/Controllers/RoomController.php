@@ -18,33 +18,18 @@ class RoomController extends Controller
     }
 
 
-
-    public function search(Request $request){
-
-        
-        $start_date = $request->start_date;
-        $end_date = $request->end_date;
-        $category = $request->category;
-
-        
-        // Parse the date using Carbon to ensure proper formatting
-        $parsed_start_date = Carbon::parse($start_date)->startOfDay();
-        $parsed_end_date = Carbon::parse($end_date)->endOfDay();
-
-
-        $reservations = Reservation::with(['rooms.category'])
-            ->where('start_date', '>=', $parsed_start_date)
-            ->where('end_date', '<=', $parsed_end_date)
-            ->whereHas('rooms', function ($query) use ($category) {
-                $query->where('category_id', $category);
-        })
+    public function search(Request $request)
+    {
+        $rooms = Room::query()
+            ->with('category')
+            ->whereDoesntHave('reservations', fn ($query) =>
+                $query->where('start_date', '<', $request->start_date)
+                    ->where('end_date', '>', $request->end_date)
+            )
+            ->where('category_id', $request->category)
             ->get();
 
-        // dd($reservations);
-        
-        return view('search', compact('reservations') );
-
-
+        return view('search', compact('rooms'));
     }
 
 

@@ -25,14 +25,13 @@ Route::get('restaurant', function (Request $request) {
     return view('restaurant');
 })->name('restaurant');
 
-Route::get('blog', function (Request $request) {
-    return view('blog');
-})->name('blog');
+Route::view('blog', 'view')->name('blog');
 
 Route::get('room', function (Request $request) {
     return view('room');
 })->name('room-single');
 
+Route::get('/search', [RoomController::class, 'search'])->name('search');
+
 Route::get('/available-rooms', [RoomController::class, 'availableRooms'])->name('available-rooms');
 
-Route::post('search', [RoomController::class, 'search'])->name('search');

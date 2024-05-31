@@ -19,6 +19,10 @@ use Filament\Tables\Actions\BulkActionGroup;
 class RoomResource extends Resource
 {
     protected static ?string $model = Room::class;
+    public static function getLabel(): string
+    {
+        return __('room');
+    }
 
     public static function getNavigationLabel(): string
     {
