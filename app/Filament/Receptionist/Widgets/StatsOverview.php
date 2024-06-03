@@ -11,16 +11,17 @@ class StatsOverview extends BaseWidget
     protected function getStats(): array
     {
         return [
-            Stat::make('Users', '192.1k')
-            ->description('32k increase')
-            ->descriptionIcon('heroicon-m-arrow-trending-up')
-            ->color('success'),
-        Stat::make('Bounce rate', '21%')
-            ->description('7% increase')
+            Stat::make('Chambres', '40')
+            ->description('All chambres from the database')
             ->descriptionIcon('heroicon-m-arrow-trending-down')
             ->color('danger'),
-        Stat::make('Average time on page', '3:12')
-            ->description('3% increase')
+
+        Stat::make('Clients', '30')
+            ->description('All clients from the database')
+            ->descriptionIcon('heroicon-m-arrow-trending-down')
+            ->color('danger'),
+        Stat::make('Réservations', '20')
+            ->description('All réservations from the database')
             ->descriptionIcon('heroicon-m-arrow-trending-up')
             ->color('success'),
         ];

@@ -5,6 +5,8 @@ use App\Enums\PaymentType;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Filament\Tables\Columns\TextColumn;
+use Barryvdh\DomPDF\Facade\Pdf;
+
 use App\Filament\Receptionist\Resources\InvoiceResource\Pages;
 use App\Filament\Receptionist\Resources\InvoiceResource\RelationManagers;
 use App\Models\Invoice;
@@ -12,6 +14,8 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Actions\Action;
+
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -19,6 +23,10 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class InvoiceResource extends Resource
 {
     protected static ?string $model = Invoice::class;
+    public static function getLabel(): string
+    {
+        return __('invoice');
+    }
     public static function getNavigationLabel(): string
     {
         return __('invoice');
@@ -53,13 +61,46 @@ class InvoiceResource extends Resource
                 //
             ])
             ->actions([
-                Tables\Actions\ViewAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                ]),
-            ]);
-    }
+                Action::make('exportPDF')
+                ->label('Export PDF')
+                ->icon('heroicon-o-arrow-down-tray')
+                ->action(function($record){
+
+                    $reservation = $record->reservation;
+                    // Calculate the total amount
+    $startDate = new \DateTime($reservation->start_date);
+    $endDate = new \DateTime($reservation->end_date);
+    $interval = $startDate->diff($endDate);
+    $days = $interval->days;
+
+    $totalAmount = 0;
+
+    // Query rooms and calculate the total amount
+    //$rooms = Room::whereIn('id', $data['rooms'])->get();
+    //foreach ($rooms as $room) {
+     //   $totalAmount += $days * $room->price;
+    //}
+
+  // Generate the PDF
+  $pdf = PDF::loadView('pdf_template', [
+    'invoice' => $record,
+]);
+  return response()->streamDownload(function () use ($pdf) {
+    echo $pdf->stream();
+    }, 'name.pdf');
+
+        }),
+            
+            Tables\Actions\EditAction::make(),
+            Tables\Actions\DeleteAction::make(),               
+            Tables\Actions\ViewAction::make(),
+        ])
+        ->bulkActions([
+            Tables\Actions\BulkActionGroup::make([
+                Tables\Actions\DeleteBulkAction::make(),
+            ]),
+        ]);
+}
 
     public static function getRelations(): array
     {

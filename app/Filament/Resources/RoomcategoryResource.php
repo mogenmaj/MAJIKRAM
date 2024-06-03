@@ -34,14 +34,8 @@ class RoomcategoryResource extends Resource
     {
         return $form
             ->schema([
-                ToggleButtons::make('label')->inline()->options([
-                    'suite_room' => 'Suite Room',
-                    'classic_room' => 'Classic Room',
-                    'family_room' => 'Family Room',
-                    'luxury_room' => 'Luxury Room',
-                    'superior_room' => 'Superior Room',
-                    'deluxe_room' => 'Deluxe Room',
-                ])->label('Label'),
+                TextInput::make('label')->required()->label('Category name'),
+              
             ]);
     }
     public static function table(Table $table): Table

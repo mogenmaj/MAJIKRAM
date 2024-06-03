@@ -2,21 +2,23 @@
 
 namespace App\Filament\Resources;
 use Filament\Forms;
+use App\Models\Room;
 use Filament\Tables;
 use App\Models\Invoice;
 use Filament\Forms\Form;
 use App\Enums\PaymentType;
 use Filament\Tables\Table;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Filament\Resources\Resource;
+
+use Filament\Tables\Actions\Action;
 use Filament\Forms\Components\Select;
 use Filament\Tables\Columns\TextColumn;
-
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\DatePicker;
 use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\InvoiceResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Tables\Actions\Action;
 use App\Filament\Resources\InvoiceResource\RelationManagers;
 
 class InvoiceResource extends Resource
@@ -63,11 +65,31 @@ class InvoiceResource extends Resource
                     ->label('Export PDF')
                     ->icon('heroicon-o-arrow-down-tray')
                     ->action(function($record){
-                        $pdfPath = $record->path;
-                        $pdfFilename = basename($pdfPath);
 
-                        return response()->download(storage_path('app/' . $pdfPath), $pdfFilename);
-                                      }),
+                        $reservation = $record->reservation;
+                        // Calculate the total amount
+        $startDate = new \DateTime($reservation->start_date);
+        $endDate = new \DateTime($reservation->end_date);
+        $interval = $startDate->diff($endDate);
+        $days = $interval->days;
+
+        $totalAmount = 0;
+
+        // Query rooms and calculate the total amount
+        //$rooms = Room::whereIn('id', $data['rooms'])->get();
+        //foreach ($rooms as $room) {
+         //   $totalAmount += $days * $room->price;
+        //}
+
+      // Generate the PDF
+      $pdf = PDF::loadView('pdf_template', [
+        'invoice' => $record,
+    ]);
+      return response()->streamDownload(function () use ($pdf) {
+        echo $pdf->stream();
+        }, 'name.pdf');
+
+            }),
                 
                 Tables\Actions\EditAction::make(),
                 Tables\Actions\DeleteAction::make(),               
@@ -91,7 +113,6 @@ class InvoiceResource extends Resource
     {
         return [
             'index' => Pages\ListInvoices::route('/'),
-            'create' => Pages\CreateInvoice::route('/create'),
             'edit' => Pages\EditInvoice::route('/{record}/edit'),
         ];
     }

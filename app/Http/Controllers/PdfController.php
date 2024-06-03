@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Invoice;
 use App\Models\Client;
-use Barryvdh\DomPDF\Facade\Pdf;
+use App\Models\Invoice;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Barryvdh\DomPDF\Facade\Pdf;
+use Spatie\Browsershot\Browsershot;
 
 class PdfController extends Controller
 {
@@ -13,9 +15,15 @@ class PdfController extends Controller
     {
         $title = 'MAJIKROOM';
         $date = date('Y-m-d');
-        $invoices = Invoice::all();
-        $clients = Client::all();
-        $pdf = Pdf::loadView('pdf_template', compact('title', 'date', 'invoices', 'clients'));
-        return $pdf->download('invoice_report.pdf');
+        $invoices = Invoice::with(['client', 'reservation'])->get(); // Charger les relations client et réservation
+    
+        $pdf = Pdf::loadView('pdf_template', compact('title', 'date', 'invoices'));
+        
+        $output = $pdf->output();
+    
+        return new Response($output, 200, [
+            'Content-Type' => 'application/pdf',
+            'Content-Disposition' =>  'inline; filename=test.pdf',
+        ]);
     }
 } 

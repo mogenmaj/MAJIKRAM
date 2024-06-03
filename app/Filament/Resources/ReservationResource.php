@@ -40,41 +40,51 @@ class ReservationResource extends Resource
     {
         return $form
         ->schema([
-            Select::make('client_id')
-                ->label('Client')
-                ->relationship('client', 'first_name')
-                ->required(),
-            MultiSelect::make('rooms')
+            DatePicker::make('start_date')
+            ->label('Start Date')
+            ->required()
+            ->live()
+            ->native(false),
+        DatePicker::make('end_date')
+            ->label('End Date')
+            ->required()
+            ->live()
+            ->native(false),
+           
+             MultiSelect::make('rooms')
                 ->label('Rooms')
                 ->options(function (callable $get) {
                     $startDate = $get('start_date');
                     $endDate = $get('end_date');
-
+                    $currentRecordId = request()->route('recordId');
+            
                     if ($startDate && $endDate) {
                         // Fetch available rooms based on the selected date range
                         $availableRooms = Room::whereDoesntHave('reservations', function ($query) use ($startDate, $endDate) {
                             $query->where('start_date', '<', $endDate)
                                   ->where('end_date', '>', $startDate);
-                        })->pluck('room_number', 'id');
-
-                     
-
+                        });
+            
+                        // Exclude the current room ID if editing
+                        if ($currentRecordId) {
+                            $availableRooms = $availableRooms->where('id', '!=', $currentRecordId);
+                        }
+            
+                        $availableRooms = $availableRooms->pluck('room_number', 'id');
+            
                         return $availableRooms;
                     }
-
+            
                     return [];
                 })
                 ->required(),
-            DatePicker::make('start_date')
-                ->label('Start Date')
-                ->required()
-                ->live()
-                ->native(false),
-            DatePicker::make('end_date')
-                ->label('End Date')
-                ->required()
-                ->live()
-                ->native(false),
+            
+           
+                Select::make('client_id')
+                ->label('Client')
+                ->relationship('client', 'first_name')
+                ->required(),
+
         ]);
     }
 

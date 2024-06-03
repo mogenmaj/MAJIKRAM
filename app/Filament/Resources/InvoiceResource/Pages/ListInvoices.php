@@ -10,10 +10,4 @@ class ListInvoices extends ListRecords
 {
     protected static string $resource = InvoiceResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
-}
+  }

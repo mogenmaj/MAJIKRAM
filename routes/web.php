@@ -5,7 +5,7 @@ use App\Http\Controllers\PdfController;
 use App\Http\Controllers\RoomController;
 
 
-Route::get('/generate-pdf', [PdfController::class, 'generatePdf']);
+Route::get('/generate-pdf/{invoice}', [PdfController::class, 'generatePdf']);
 
 Route::get('/', [RoomController::class, 'index'])->name('index');
 
@@ -34,4 +34,3 @@ Route::get('room', function (Request $request) {
 Route::get('/search', [RoomController::class, 'search'])->name('search');
 
 Route::get('/available-rooms', [RoomController::class, 'availableRooms'])->name('available-rooms');
-

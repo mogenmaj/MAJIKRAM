@@ -15,8 +15,8 @@ class Invoice extends Model
     {
         return $this->belongsTo(Client::class);
     }
-     public function reservation(): HasOne
+     public function reservation(): BelongsTo
     {
-        return $this->hasOne(reservation::class);
+        return $this->belongsTo(reservation::class);
     }
 }
